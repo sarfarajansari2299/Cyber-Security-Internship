@@ -1,4 +1,4 @@
-# Cyber-Security-Internship Module 1
+# Cyber-Security-Internship Project 1
 
 
 ## Overview
