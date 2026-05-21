@@ -247,13 +247,13 @@ Connectivity between all virtual machines was verified using ping commands.
 ### Kali Linux → Windows 10
 
 ```bash
-ping 192.168.56.103
+ping 192.168.xx.xxx
 ```
 
 ### Kali Linux → Metasploitable2
 
 ```bash
-ping 192.168.56.101
+ping 192.168.xx.xxx
 ```
 
 ---
