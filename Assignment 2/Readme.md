@@ -1,4 +1,4 @@
-# Project 2 Kali Linux Desktop Environment Exploration
+# Assignment 2 Kali Linux Desktop Environment Exploration
 
 ## Objective
 
