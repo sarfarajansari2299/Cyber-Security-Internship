@@ -1,4 +1,4 @@
-# Project 1 Virtual Lab Environment Setup
+# Assignment 1 Virtual Lab Environment Setup
 
 ## Objective
 
