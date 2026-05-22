@@ -69,7 +69,6 @@ ls
 
 ![Image](https://images.openai.com/static-rsc-4/JBKFLhNR99bm7SpmcWrV7BXlf648SyMQMWUZgaUgihYMGfiZxvGEXIW79XJ-HlXnsFODh022DWtsGmf_ZnYLny3Ww5nqL7a703AGnWaYz9ifmydTGJhSQeWi04qWAGZBzZcPYmBdJPdGIsLggeUttaTWxltA8XmdOHeW3SK7LVD2YX9DRb89_XUCVdss8kCW?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/oUeYZUmh9Ts5kFTnDe3qxVAwiCF2quCfjPeEyTwhuhx6zqnizs7k6FyR8M-ccvzz9MUi4-SnMmWvrx3zz6r5cpcOlvQRauYXuUKrWmnf9h-xlqgfFCpPCz4IjjIuqkaQhk616un1B6J39fAFWg5Lywhc3_1a5xl50II9wyfJ4h1vjB6tWF4i-kSAb2Xw5kHI?purpose=fullsize)
 
 ## Observation
 
