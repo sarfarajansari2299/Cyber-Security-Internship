@@ -554,10 +554,8 @@ sudo apt update && sudo apt upgrade
 
 ## Screenshot
 
-```text
-Reading package lists... Done
-Calculating upgrade... Done
-```
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/273ea0e5-a889-42a9-b4e2-f925ceb116db" />
+
 
 ---
 
