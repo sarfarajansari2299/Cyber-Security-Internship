@@ -1,4 +1,4 @@
-# Linux File System Treasure Hunt
+# Assignment 3: Linux File System Treasure Hunt
 
 ## Objective
 
