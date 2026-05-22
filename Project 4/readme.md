@@ -50,19 +50,13 @@ pwd
 
 ```bash
 ls
-ls -la
+
 ```
 
 ## Screenshot
 
-```text
-kali@kali:~$ ls
-Documents  Downloads  Desktop
 
-kali@kali:~$ ls -la
-total 48
-drwxr-xr-x 12 kali kali 4096 May 22 10:00 .
-```
+<img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/67417312-4eea-4756-a12a-2ab641668ffa" />
 
 ---
 
@@ -75,10 +69,10 @@ mkdir TestFolder
 
 ## Screenshot
 
-```text
-kali@kali:~$ mkdir LinuxLab
-kali@kali:~$ mkdir TestFolder
-```
+<img width="937" height="657" alt="image" src="https://github.com/user-attachments/assets/59649192-d0fc-4729-a88e-317f9c148eb1" />
+<img width="1057" height="822" alt="image" src="https://github.com/user-attachments/assets/2cf34c3c-9cb1-43cf-812f-8908d542e801" />
+
+
 
 ---
 
@@ -91,10 +85,8 @@ pwd
 
 ## Screenshot
 
-```text
-kali@kali:~/LinuxLab$ pwd
-/home/kali/LinuxLab
-```
+<img width="1057" height="822" alt="image" src="https://github.com/user-attachments/assets/eb34b116-d437-40c9-b6b8-cd27ee4cd8a1" />
+
 
 ---
 
@@ -107,12 +99,8 @@ touch notes.txt
 
 ## Screenshot
 
-```text
-kali@kali:~/LinuxLab$ touch file1.txt
-kali@kali:~/LinuxLab$ touch notes.txt
-```
+<img width="1057" height="822" alt="image" src="https://github.com/user-attachments/assets/401c5bee-d3d4-4604-a7ba-51eb196c883e" />
 
----
 
 ### Copy Files
 
@@ -122,9 +110,8 @@ cp file1.txt backup.txt
 
 ## Screenshot
 
-```text
-kali@kali:~/LinuxLab$ cp file1.txt backup.txt
-```
+<img width="1057" height="822" alt="image" src="https://github.com/user-attachments/assets/05bec2a3-dbbd-4d0b-8470-d71753b33e36" />
+
 
 ---
 
@@ -136,9 +123,7 @@ mv backup.txt newbackup.txt
 
 ## Screenshot
 
-```text
-kali@kali:~/LinuxLab$ mv backup.txt newbackup.txt
-```
+<img width="1057" height="822" alt="image" src="https://github.com/user-attachments/assets/5aa97cef-db8c-4c0f-bec7-d6843bccda8c" />
 
 ---
 
@@ -150,9 +135,8 @@ rm newbackup.txt
 
 ## Screenshot
 
-```text
-kali@kali:~/LinuxLab$ rm newbackup.txt
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/ad039cb1-ece7-44b2-b810-e9c22337489f" />
+
 
 ---
 
@@ -165,9 +149,7 @@ rmdir TestFolder
 
 ## Screenshot
 
-```text
-kali@kali:~$ rmdir TestFolder
-```
+<img width="1196" height="1017" alt="image" src="https://github.com/user-attachments/assets/cc0e2213-81e2-402a-8b99-17865bfe0df3" />
 
 ---
 
@@ -204,10 +186,8 @@ cat notes.txt
 
 ## Screenshot
 
-```text
-Linux Command Line Practice
-Cyber Security Lab
-```
+<img width="1230" height="1017" alt="image" src="https://github.com/user-attachments/assets/7c0e431d-02ab-4b6d-9f1b-8b8ae6a937ee" />
+
 
 ---
 
@@ -219,13 +199,8 @@ less notes.txt
 
 ## Screenshot
 
-```text
-Linux Command Line Practice
-Cyber Security Lab
-~
-~
-(END)
-```
+<img width="1351" height="1017" alt="image" src="https://github.com/user-attachments/assets/9d766f9a-ef41-4366-b349-e47b83ebce30" />
+
 
 ---
 
@@ -262,10 +237,15 @@ grep "Cyber" notes.txt
 ```
 
 ## Screenshot
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/0a4192ac-a3fa-4b53-ba24-15523389dfc9" />
 
-```text
-Cyber Security Lab
-```
+
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/084328c2-f58e-47d6-af9a-98fb6fe6907e" />
+
+<img width="1246" height="1017" alt="image" src="https://github.com/user-attachments/assets/80264264-602c-4169-b7b6-1fbf0a21586a" />
+
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/ff42d091-dfe8-486e-9912-12dfee22903f" />
+
 
 ---
 
@@ -284,11 +264,10 @@ echo "Advanced Linux Commands" >> demo.txt
 ```
 
 ## Screenshot
+<img width="1235" height="1017" alt="image" src="https://github.com/user-attachments/assets/419355e7-24cd-413d-a0f6-4aa2d8efbc19" />
 
-```text
-Linux Basics
-Advanced Linux Commands
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/5b528531-b445-431e-a391-de78371dfe4c" />
+
 
 ---
 
@@ -302,12 +281,8 @@ nano notes.txt
 
 ## Screenshot
 
-```text
-GNU nano 7.2               notes.txt
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/bce65bc7-64c3-4aa7-a5d2-d957f1f332bc" />
 
-Linux Command Line Practice
-Cyber Security Lab
-```
 
 ---
 
@@ -335,9 +310,7 @@ whoami
 
 ## Screenshot
 
-```text
-kali
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/c31d645d-ff6c-4c48-9c34-ee9ee9fa9b23" />
 
 ---
 
@@ -349,9 +322,8 @@ hostname
 
 ## Screenshot
 
-```text
-kali-linux
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/720de967-ea7c-4a64-8e5e-7ccb1f2c2db4" />
+
 
 ---
 
@@ -363,9 +335,8 @@ uname -a
 
 ## Screenshot
 
-```text
-Linux kali-linux 6.6.9-amd64 x86_64 GNU/Linux
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/0ccb9408-4ecc-4f04-be7b-be9830cd983c" />
+
 
 ---
 
@@ -377,10 +348,8 @@ df -h
 
 ## Screenshot
 
-```text
-Filesystem      Size  Used Avail Use%
-/dev/sda1        50G   18G   30G  38%
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/783ba134-8a64-4380-9841-d0fed8f9cb29" />
+
 
 ---
 
@@ -392,10 +361,7 @@ free -m
 
 ## Screenshot
 
-```text
-              total   used   free
-Mem:           4096   2100   1996
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/28f2a0c9-31ad-468c-90d9-36b8df2018a7" />
 
 ---
 
@@ -407,13 +373,19 @@ Mem:           4096   2100   1996
 ps aux
 ```
 
----
 
+## Screenshot
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/07f7c91d-8e6d-4e59-b323-7f8b9ad4ef8c" />
+
+---
 ### Real-Time Process Monitoring
 
 ```bash
 top
 ```
+## Screenshot
+
+<img width="1068" height="1017" alt="image" src="https://github.com/user-attachments/assets/bc248dc3-69f2-4e44-aacd-f4d58b6c514a" />
 
 ---
 
@@ -425,10 +397,8 @@ ifconfig
 
 ## Screenshot
 
-```text
-eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>
-inet 10.0.2.15
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/581e7b40-fe6a-4aa4-ab9d-663d3b03c4d7" />
+
 
 ---
 
@@ -440,10 +410,8 @@ ip addr
 
 ## Screenshot
 
-```text
-2: eth0:
-inet 10.0.2.15/24
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/3b27a596-2e94-45fc-8cc4-fb74f098e956" />
+
 
 ---
 
@@ -471,9 +439,8 @@ find /home/kali -name notes.txt
 
 ## Screenshot
 
-```text
-/home/kali/LinuxLab/notes.txt
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/451fcf06-fc3c-4827-a70b-f317ac5f7771" />
+
 
 ---
 
@@ -493,9 +460,8 @@ locate notes.txt
 
 ## Screenshot
 
-```text
-/home/kali/LinuxLab/notes.txt
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/897fabd7-29da-4df9-8f39-ef1b5a046772" />
+
 
 ---
 
@@ -521,33 +487,8 @@ chmod 777 demo.txt
 
 ## Screenshot
 
-```text
--rwxr-xr-x 1 kali kali script.sh
--rw-r--r-- 1 kali kali notes.txt
--rwxrwxrwx 1 kali kali demo.txt
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/5c3e2262-f9e1-4a5d-85cb-db7ca52fb6b3" />
 
----
-
-## d. Change Ownership Using chown
-
-### Command
-
-```bash
-sudo chown kali:kali notes.txt
-```
-
-## Screenshot
-
-```text
-Ownership changed successfully
-```
-
----
-
-## Observation
-
-Linux permissions and ownership provide strong access control mechanisms for system security and file protection.
 
 ---
 
@@ -569,11 +510,8 @@ apt search nmap
 
 ## Screenshot
 
-```text
-Sorting... Done
-Full Text Search... Done
-nmap/kali-rolling
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/aac3ebf5-eaa8-41c5-b7de-757ac86fa11c" />
+
 
 ---
 
@@ -587,10 +525,8 @@ sudo apt install nmap
 
 ## Screenshot
 
-```text
-Setting up nmap...
-Installation completed successfully.
-```
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/e51850a9-6584-4d66-86e9-bf2d8dcdede0" />
+
 
 ---
 
@@ -603,11 +539,8 @@ sudo apt remove nmap
 ```
 
 ## Screenshot
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/18443490-d9d8-4eee-be62-9e55d527e83b" />
 
-```text
-Removing nmap...
-Done.
-```
 
 ---
 
