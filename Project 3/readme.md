@@ -99,12 +99,8 @@ ls
 | apt    | Package manager configuration |
 
 ## Screenshot
+<img width="1604" height="980" alt="2" src="https://github.com/user-attachments/assets/b0d920b6-eec7-425b-8af3-5d238726cd6a" />
 
-![Image](https://images.openai.com/static-rsc-4/ubPTdvJXWJhLUT1X-3kyX670gUgS1JQWxRvtK1lt_y2irTnyPPSo8tmTMTgtnCvB_9Rj5df1GY-a7vj7aY_y9vXg0YE489Ma_clLYqSi65i1H9uz2StwfEQf4kXiYY8kApd12ZDtK33iHuctVRw45Xe7ciwIgSgrfRpvYtAGW6MLUXTUeB--_vxofnu0dnsz?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/VGU44UqbTxnuyESqLKxKW4xfhvsJE7Se0gdYKvcUr4YNUW_ZcBXW_QIrEeYlKIahPXg3-BFfez07W2trWLAwrwZdG038FST_2y0JOk2KoMvdqgh34lbvQSQqo_WUtaAiNCy9_liMEinNgrJc-CadaAzog0GMeMsBWIUZevClbpq2MpLFhfOArNmiP1DqlmiO?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/ozVCpDO46-QvzqYf2Z-HRU9MhqMhPSXrGbo4tPFbhif4W631kLi-BlSNWJByQtycArYFHk4hXli8uQWjfyJysJuAKF9I73XAVMGFmfcxaVkGYtHkYO6pwLz9nDCoQdQKkMrmTIo5Rngw-74elAUPCz03TnrCsTy5tw_Q1VmIDPNeBC7UdjbXFVL7L9oJs1wy?purpose=fullsize)
 
 ## Observation
 
@@ -156,7 +152,7 @@ ls
 
 ![Image](https://images.openai.com/static-rsc-4/TnymBRNg_-UN9YyIB9lR46Gm50PbEh-bSehlcLOw2RJLRW5yxVuLbeUq7r6eKBhna2uKizXpk9SieqKJRiosY8YYa2Bqw4vxO9uN6MnaBKvbHtfALTWxQ-Aasp4uCuBx-hqJiqrHLpU-Ka1oXwOgam6eCi_zSPZbml91e50-afVTKNSOojNLIn4WHFijroVX?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/_HxOdo9f7AYkh3jVEMIyhJW1S9U7yXgOhVLmsj2nHE-pDLKh5XJCmp7GEdn7dn44s2WqydJtG5dYuH9rCOhQSTEz-GzGTWPg3cHpYU1liskgxvvmxLsPeEHIrikLzBN77KwY-GHAdcy71K9OgrAH6-tSc1Ed6NhPzy-OcJlu9LPINYNw7S8FZoXUVzCHYxEs?purpose=fullsize)
+
 
 ![Image](https://images.openai.com/static-rsc-4/T2Kn65s8RixAuLUX0k-yiwznb8Eay-rL7ejLiJt3F7ZZ4iT4HA9s873GfuNyVVReI66uwIEeBRFhmo3yl44F0BrgW9y8-3NiIe324Y7dFF3FzuIQ4anmNEEnSYBFsP_Xc5ZgJVGKYiT5r3E6XS61GaGEoMcfxG1yQbZwhs9el4R0_Q4aE6Y4IKxPQyLcGbgZ?purpose=fullsize)
 
@@ -180,10 +176,10 @@ ls
 ```
 
 ## Screenshot
+<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/ff53301f-8875-43d3-a201-e63ca0659e1b" />
 
-![Image](https://images.openai.com/static-rsc-4/lUdfH16oHVCLwBltpGMMU7-CR1HsFmwq3TGvdqT9AXQb6qP5fidjXIGMIrN728m03KgpKtCnTBGq-Gkz6VTlT_02o9TIbfPLXqI0r6gTpzzfaXnAyRE_AX25Wzaznm7bde9_z6mQy2FEuzD-7eXkhPDPlArarboFcqLGL0sb6gRfvYJoqCWgAgPVoxLiThsh?purpose=fullsize)
+<img width="1254" height="1155" alt="3" src="https://github.com/user-attachments/assets/e9eb2105-4b32-48fc-aeff-9d0d42d5f30f" />
 
-![Image](https://images.openai.com/static-rsc-4/oLZXoPRisVHnlYrXfkNEWl6h8VJDCN6xGsDqGHQ0uVXQafctLfP8LT2syVzKWkUT3TiWVRUmSje1yWP3vjGy9Jm61jCF8EzOnraFlNuUQp-CEZh7jJkgdMzKlKUjcdmJxjWGwNCMOTfl439hLVTX0VimiBw4l3g5co8iwYOiHGFCJMZMD3s0n4l0yGhcV-AO?purpose=fullsize)
 
 ![Image](https://images.openai.com/static-rsc-4/T2Kn65s8RixAuLUX0k-yiwznb8Eay-rL7ejLiJt3F7ZZ4iT4HA9s873GfuNyVVReI66uwIEeBRFhmo3yl44F0BrgW9y8-3NiIe324Y7dFF3FzuIQ4anmNEEnSYBFsP_Xc5ZgJVGKYiT5r3E6XS61GaGEoMcfxG1yQbZwhs9el4R0_Q4aE6Y4IKxPQyLcGbgZ?purpose=fullsize)
 
@@ -208,9 +204,8 @@ ls
 
 ## Screenshot
 
-![Image](https://images.openai.com/static-rsc-4/zyyXlbA5fPDmgBQdu-UE2LHFTB5qxNNI4a4rqheAOcUQyx3R4VOQ6FldGqNyaiBElnIdEM12PztrU3MMPYjxboAs7njMNoMsQmYFMjHwlcAsvFAHsdaf58KsihWwoF4KTW6Dm4nADiTFyKYDrLnq0gzf3oICT9lglt9CTOWjbHP5BZTBqgEOAdUwcUkTjk3k?purpose=fullsize)
+<img width="1321" height="771" alt="4" src="https://github.com/user-attachments/assets/5d589252-9b83-4cec-8e40-bc74331dcf9c" /> 
 
-![Image](https://images.openai.com/static-rsc-4/Tz6QcuJ0qf7b40qLtElTUGM9B3xQ57kpoOk9NsfcNXGSVNoQfwHfkKcj5oCgOFeJqk20JP810IAvRy-ZTd5hIrTWUjM3qsed7UJo2G1VaCb4ZKJ3XSxEKAO6G1cbbAtRcvPlnzJBjPiM9NA2cuND_KZYWO7msuBrOOVbfG7WK0eOILQfo9k_jhhsDa86HuXk?purpose=fullsize)
 
 ![Image](https://images.openai.com/static-rsc-4/T2Kn65s8RixAuLUX0k-yiwznb8Eay-rL7ejLiJt3F7ZZ4iT4HA9s873GfuNyVVReI66uwIEeBRFhmo3yl44F0BrgW9y8-3NiIe324Y7dFF3FzuIQ4anmNEEnSYBFsP_Xc5ZgJVGKYiT5r3E6XS61GaGEoMcfxG1yQbZwhs9el4R0_Q4aE6Y4IKxPQyLcGbgZ?purpose=fullsize)
 
@@ -235,11 +230,11 @@ ls
 
 ## Screenshot
 
-![Image](https://images.openai.com/static-rsc-4/qHIy2HhFlHtn_W2NBCNAiFgN717kOqaWeLjJ6DNvyqsOW1CAYYnKtXDIP_MWAv4NwwFShU_Ivs1H37eCv9nA98BCRE9ejLHftkJHuwnDRStP3mFmTnjriHCUIqrv5keBTh--WL3CtsB_PPYJylSndhSvTkE_-y1qg_C436GQLwW_hnT_xZzREp4LUpNO0H1I?purpose=fullsize)
+
 
 ![Image](https://images.openai.com/static-rsc-4/hdnRkY5xKFSc7JIO0kke4x_9hJ1pst6HXrwlOzRnTQmfi-5WjGJh9GZMoRn_yiYKi_uNeBGt1sMkRUlIOcXwyPsffnOtrxGbI0P_nAPy2hhmrcXsQa2EakMhH_aABKRM-LIhadw17QL4-gzm-DoT70Z1IIRShs2M9jQxtL-rTwUY0bJj4Gmw-TSsFFeBR_kN?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/qHIy2HhFlHtn_W2NBCNAiFgN717kOqaWeLjJ6DNvyqsOW1CAYYnKtXDIP_MWAv4NwwFShU_Ivs1H37eCv9nA98BCRE9ejLHftkJHuwnDRStP3mFmTnjriHCUIqrv5keBTh--WL3CtsB_PPYJylSndhSvTkE_-y1qg_C436GQLwW_hnT_xZzREp4LUpNO0H1I?purpose=fullsize)
+
 
 ## Observation
 
@@ -261,12 +256,13 @@ ls
 ```
 
 ## Screenshot
+<img width="1122" height="1402" alt="image" src="https://github.com/user-attachments/assets/6ac09d37-ba48-446f-8e3d-73194ea095e4" />
 
-![Image](https://images.openai.com/static-rsc-4/RKwWGdWeNkCJkxpoL5Mp4kgVRPPJfYy8x5gMqP0gaxgZx-pBD_SoH3_4vREF5EZ2xS-Mt18JLksybU1HI_RKAC-CHIN0FIJPbj232UdcjBWW--3qhTrCRBpX0YwQtloMEeiIEByKAPidLHJW8S3bw0rkrG6fFp4tLwqP0-GHfFgf41JRT1HJPAnxIWapOIOS?purpose=fullsize)
+
 
 ![Image](https://images.openai.com/static-rsc-4/D7LL61Oio5tr-WqknD_t4QfP1v5ntDEUqQq4YYKGRfjsEWvs05oOCbEg1D8IP_nczW0F12h-0AMdHKgTZHJNv74wFrJBIdxV3J6Sxp2HQcLi4ZalAVyV-Gz1XwZVYEMXQ6Elr4Vxd6a34hqA7Lx0enMRiTkt0E6hI4Hi9qm0VB2l3g81oqLlYHdwmVIRuDfN?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/JdSpF1qDd4Q249TTTITbj-lwqaSMxF2zgzC17d27H1jRbw7IXu8gHSbouYaK-aFUjvQ-qTMa29cdYHAzS-pIISOMaS_sQPncv_fM5aoNcAw2RxUDbSNNqAM-Lvpm-KFcaI5AVD_GytgsA5GYXM46yD4M5smecoR-KQOhLqqRuBtt7FEGsnQBduQw1FPuxvQD?purpose=fullsize)
+
 
 ## Observation
 
@@ -301,9 +297,8 @@ hacking-lab/
 
 ## Screenshot
 
-![Image](https://images.openai.com/static-rsc-4/rWw2sZAgHWJnhY0ham0OEsH6q-j2s2oIfto3xbhV5gD372iUjOT6-vanD37Y1KrDomM-7BTzvtIsMK3cPRyCDQkpW9H6Yw3bVKp83tLj8J4BBevC2oQbhe-J9Vfo3RWdaWyQXNVpAGno3rQiDGPht3-y_KWuoE8u9YKCX9smN31F4kasxNED1VQR1QKMaPO0?purpose=fullsize)
+<img width="1122" height="1402" alt="image" src="https://github.com/user-attachments/assets/3561fe37-8180-4aab-bcb3-c3d38f205913" />
 
-![Image](https://images.openai.com/static-rsc-4/_Ox0DDh_acAfmKwqRr-fZmUHB64C0Q7XnrRpk9jO1JclT8LaBx60YedbTXjQqsSGlQIvPaBuC72weJf3RiU3d2dDHXIvtfmiYFPJ-Kh6qpr-Jyv7vAqEoD8GlybyMj-RmwW08udrKX_SahSBoRsOp_6scr_Mk5BMPtaHus7-2fS1F8dCXCcD5m67ufSui_63?purpose=fullsize)
 
 ![Image](https://images.openai.com/static-rsc-4/-WklHk68_sjbmn61HgW77yP-pYat9LEv3fVlEtyjM_CdZLN0RjVvBgK1hCnvS0F8TJTga2D1_HDNwZBQkXrDZAI9zrm6VNrrArK_8jdP2LB8QcyFjJ-_DSFZJmYY70dkmkXNO7AeYCaZf7Rnypa7ykHNia47IDCyzTLxag4uDHIto0kov_VXvAKyiqLqZwEx?purpose=fullsize)
 
@@ -345,9 +340,27 @@ find /etc -name "*.conf"
 
 ![Image](https://images.openai.com/static-rsc-4/-atiMGA22VLkqM-6NnO3R6HUNjNO0iTvyWTT_eFRVdBcW8-stZV_nlYqrTgyxa_AGv0gHZrKhqXI8OWOKwMa7ghOSpuzgYzLkFsDmNXw7EJ8xuq8J2xKxYAZi5Dd6BKYqr7XRm4n6pRltZRLUuzXgWxaatPQA74Oi8eMB20w1KlNEz77jVnW4GwwYSRUh6RV?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/VGU44UqbTxnuyESqLKxKW4xfhvsJE7Se0gdYKvcUr4YNUW_ZcBXW_QIrEeYlKIahPXg3-BFfez07W2trWLAwrwZdG038FST_2y0JOk2KoMvdqgh34lbvQSQqo_WUtaAiNCy9_liMEinNgrJc-CadaAzog0GMeMsBWIUZevClbpq2MpLFhfOArNmiP1DqlmiO?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/oyKbx65StybXkhkHk_ZAg6GWYLnrP5xt3NimcKxC5QXiIGoHbLpQIiAjZwUYyp-kdphL-evJMl1NlN932IHrdkdpkxKE_Jdj5aSMoUoPKjlePGqdcFDNSFJyUZUWPJrUGTji6NKomRpT1EkakBNOXhuN2F47XbqAPlbwe4_hUC5kMjarDFXrTtNaWGeDIPAD?purpose=fullsize)
+## Find Command Basic
+
+```bash id="l3n8vr"
+find -name <file_name>
+
+find -type d -name <file_name>
+
+find <path> -size
+
+find <path> -mtime <-no_of_days>
+
+find <path> -name <file_name> -exec <cmd> {} <arg> \;
+
+find <path> -name <file_name> -ok <cmd> {} <arg> \;
+
+find <path> -name <file_name> -ls
+
+find <path> -name <file_name> -delete
+```
+
 
 ## Observation
 
@@ -381,11 +394,6 @@ ls
 
 ![Image](https://images.openai.com/static-rsc-4/4Sn1QVc_B5GsdNYhagHluZDh2xlIAEuNi-OJbwNU2AGT83vvKATIG5aFurLVMskdrWHldOs-dtcOR_i7vtlot3GCqKvkHGbUCBkPKnkc36MUNIhNbRrB9TsHx1pkPKsU3PuRc9Eb7opHZAwS4K5aZr4uTo7KVvRl9R_3-280nYnIfDuEgT6Idnpj1qej3IXI?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/lG8bqr6YmUJlEJliUoOx6oB4zrXMbojpg08uPWs0oVELKykwu6T-zWHbs3l2yBjZEgSmzSRUSdFU3DEDTfykpFvVGf7_s9_884T93jhozSTqbEhY8ffZtga9Fd9BwPIAuihXkdcH9fCQqTgu391CJqrVLiC6DKTZKp3rLAIy0lk7M-p2MOh-LNiFMJiD98f7?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/NJsBNQs0RBnMjqSB7bn09AYGIjvtu0gsfXS0k9axXwf9TtYBuGSxfUPejufGnYoUU9lojNTrY8fS_2w0GS4WNLdOp6R8CnM8aMwlE0uKr5rh7cT8rtTp9a7oEVOoGi6YZasO2OLbtbMJNqxxvlcCiBVRNr3XTBi9dWC3up-AjHyWU8Qmh6AYyfty9qKpIO4O?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/5LFgndkH7Eeli_JS5QpEo5JLiz7FHOIBEjempo-1H-prV1eKkUiv6KJriT5tQqtY1os2LqCGLm7r_Y-kneslTM_X9EDwTk0yvTsm6gpq8GtQFE1KKV5td2OWyQmcAbJh6nGbo5gDyjS5jRVh94GiItmSDtDrqyBoBloc95iVlkea3-6OgC2DASiFq-0eRrkV?purpose=fullsize)
 
 ![Image](https://images.openai.com/static-rsc-4/Ru5kcCNiyRRUKnxlYox6gLDSXwkA4zy1BWUVp-8XhQcSX_yOdUdNIhAaG6wWg4wDh8DM3QwnphCQI3cDYFT1gJ56BYJz5itpkLyVJ6DI7jL7ZnOdjYhdlMRZFWlj51r9O-B0rKHW_gcueR6g1a2Z2hfQeQQCi0orfHbubBH1XDJh74yhy6sFF1g2EO4W4OTN?purpose=fullsize)
 
@@ -399,15 +407,12 @@ ls
 
 ![Image](https://images.openai.com/static-rsc-4/jlnRuUPLvGYn2cLCWF7h1xi-glgj5NUiuUJan3lumE00jkHyX7ukQdmUcMfriIDdzNcsn01S6HQ-wuj4UL6fZ7O0nOa3uY22BrVxIlW6fooHAx7RhN5vdvx2OhmjzYqvXjB9iXgn3V17oRsios_8EMS6Ij-aeVaj7ug7uLlYxAqfLt_ofmeAGhfRgc4UERDY?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/7_lWjyvnE38moKuV7Ni3E6d-SUi4HDktvTkmXDOAWR-hlsqLc8pYjySO1-ugB0IjV0lXUhiiqWw68OaDhX_XyBNvlqJo36tG8OXRp_eMRk6kDa_V-4Gf2VwLHewvPS_IvrE-kj1lUr9lRA2CR-ciNZBRa8i7HTyAH8goydXRZmjpK8KdP7sHfPVkJlcb0nEO?purpose=fullsize)
-
 ![Image](https://images.openai.com/static-rsc-4/LZt3iSLT2t09krFjzCpCcy4R5fbdi0onKod6iwXG26St92X8f6V_Y3nDoDeobTImdRBFJGMiUVC9HR4lYssNBXKQjT5q8JfPMWMU0UGBatG5Vt-czh4S5LMSMEN9ZfO6CSR9D7ach2qUpHnLiGY1HP336gzy42vuLKgRm5MJsbJ7bQ2VqRZ9Ln97IZcydWS2?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/C8pmwRre5n0Vs4n9Mr8AaiBarlsSKTwQa6xHaZwnP5iFe60WeI-OHA3U198E-1c48ACpRieCBbNCkq6sSQ_xKDhYfHn1UHcIhPxNWSiTH8bXVFzEd3X3pyhU7Cb3so0KrKTJLYVfhbMwQpxdbJOYMoEv5W14b16Y3vSDMNWF99zNS8Dqa-uCJMydjtedDfDt?purpose=fullsize)
+
 
 ![Image](https://images.openai.com/static-rsc-4/ZoFH2kEHE3MMyi7j9ohkcajojSCSgBiqAZ0yro_uCWKI9EBKE5N8Z9FJfzLDEKtAEfFE2lEXvtR-E9xDkhlPbYQqbwT55rKlp2vbQ5BRerTH0Shy-YqasjkZRaK4lEzsEnsaMQHgDg4U_pRRAMfO8bvBuBVYGDvSq9ei7xCy4obp_7NOmSLP-G39fA5FuAp6?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/eKeAUfaHG0BAMwyJ9jFulIo9dUz4Yqcv0hUcqtMF4-DYyyyZD5Ji6PZRYZo2n70B6aIB_XgyO6AQX3j5Mj-GTko0V9-s0KHYmYEUG3TO8VFBX0m9aiGmtAWBBqkT1cb4tEH_GluZQxHNcfihhh4ydLpekRk2te2DkxDq_z1hLiOWUhBeB-_8WN36JdaWQ3pc?purpose=fullsize)
 
 ## Observation
 
@@ -424,13 +429,6 @@ cd /usr/bin
 ls
 ```
 
-## Screenshot
-
-![Image](https://images.openai.com/static-rsc-4/_HxOdo9f7AYkh3jVEMIyhJW1S9U7yXgOhVLmsj2nHE-pDLKh5XJCmp7GEdn7dn44s2WqydJtG5dYuH9rCOhQSTEz-GzGTWPg3cHpYU1liskgxvvmxLsPeEHIrikLzBN77KwY-GHAdcy71K9OgrAH6-tSc1Ed6NhPzy-OcJlu9LPINYNw7S8FZoXUVzCHYxEs?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/jNt6jDOwhs2qQNdjvu4N2QbVSoWqnSiGkptr8GYoevv3kmoRNev8hL8KL5xZ42XN8JxahPDafZNLS2Lvsjzb_pYbTUMtHFr3YvnBHJW-IglNM1OwyGPzLbuK9GyAed6llQdx-FIgWshlg6RcXiNpV1Uv1hTIWQS6ktSV8RjoMsBoT0BSfR3p44fmrZGL6BEY?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/BzRO8FJ7XnVacyjLhD6AnIZeNzdH_6As3yxNiGq4rPVzQ9O-auZ21JoA8j2OzahtqeGpm8a6ZxuBJY8XLHf0beOhbM0Q0q_aKZUBgNTF1b1RZdBTg9OUpwR8zL61wTmysv5ffnHdPvdnJhxalJdYBQVZqF9cUPHIB4lYst5sE4dEVkOkC9UrafS7AgiGtFUG?purpose=fullsize)
 
 ## Observation
 
@@ -450,9 +448,8 @@ ls -la ~/.bashrc
 
 ![Image](https://images.openai.com/static-rsc-4/IaXtYOhiWh-DGvGdM5mIDhWmoUNFLAjlQqjz1aQ2L1aDoYeZYBvJ7anE-Ctbozd976CJyUnEAa-LunmkCadnVp5yxzxcS0zWKgc1aMygT4PRqSWOpSAO1lfdxmNHyYqsA2NNXIVBpifYdh7dirX2BNflxxYXnWyPk9eWDl3yWl6d-kdH0tHSJvZFlI5s4fPd?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/OhUs_n8mz2TX5PnVP4O_mtRG_ptr4P0kPI2ct-p0WvxKQD6ltamDp3jr7YJFVQc0CxOcsqcYFbItbl2cV9b6_jXSjtiQkqzyk8nmTXlo66x_VJVvaM4pGak_F08LcIzi3NeVLQvYf81qk08URA7luu4plAyEtGkW1nOxLklb3emHcAiMoNCWoJu6MONIu_zJ?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/wgbv2ehNPqcnyqW-qVH_n2iV-g8JuCCOOZ9cKU2-p0MSUmkbBehJlXe_9hWnorlJuCC34qTDFr8rx5FbNLEyQHdcMWvjrBxARFHd8yC8JVal4bxGthjJI7J3rY7bymhyXsnE0rNPM4bZBuodX7UbvBaPXu6m_DDyXY4ucQNT8OUoC7JimHRVT1ofoVGHBH1w?purpose=fullsize)
+
 
 ## Observation
 
@@ -478,9 +475,8 @@ ls -la
 
 ![Image](https://images.openai.com/static-rsc-4/U1eq9Hr8hgqKsYHGLdtJgLZjamr6wYSRSBc2leGZkLZihYr5n2dssX4uCKh8TGzuRatU-z5_w53vRqF7U3UWZ7oblFXrLRu6ZHAaqYVlfFBQiMNSrcCDPifNBVnAeVoMsalxd1vQ5FeXkusg6O1yvh5OHbsIZ6yMiOwolnw_NNjvX_tjduuhBWO5Laj8TmUS?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/wBkdbLlZnyIiuc986ZbgECZTXreB5vlvlz2N2BfFNATNXysna27wYHGSyDhtl1yg1DjlhpKqKIhHGqxSuA7bSTm8LkhNFPTMxCFq1N3Ex2DTsmgZEBvVC0DGtLuU16ftTob7azPiLgM6BSjQNLoE4YhfwfGno3KOGxCh55G9X48tMJnDa0PfNbAeir2JcnkW?purpose=fullsize)
+<img width="1086" height="1448" alt="image" src="https://github.com/user-attachments/assets/ecd78eec-d6f4-437a-a51b-e1836dcc098c" />
 
-![Image](https://images.openai.com/static-rsc-4/iHYXxQ3qouokwcRzDD8Hysekhg74z11KWa6dJjxktKS9A6tlFiorkquNoSed1XObj8YlX11I-QqtfRgMui6cOG5ENvNgQwCz7u1jru90rMTjDtZHWVfZg-lTHuUuFov_6CmbQEXOglA1WO67LQG_CdtWxlLb_2edTICuCd79mH0FCn_bRL278xD8UoHR9fCA?purpose=fullsize)
 
 ---
 
@@ -522,12 +518,8 @@ ls -l /home
 ```
 
 ## Screenshot
+<img width="1086" height="1448" alt="image" src="https://github.com/user-attachments/assets/fc395787-a8b3-42c0-88f3-1dbe10d1ccce" />
 
-![Image](https://images.openai.com/static-rsc-4/n9L9G4mmCk259gO-P6NyWx6rJv87WveX0xEmf2_CDuIIiEYVKWPCQeAt9Kj66fD0IAGm5ffy7uHIPoEGTyPoCxyFeyrU7mSyCG5BOkbmbr8srDMSGAAZV80_OplBpHNevvn_1rdzPgBBYTPzobovu9bAYTMP3STmRQEo0lCC5ujqvLgq46-pQ8ZVJJMingA-?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/i3uiN9jvIqMhTcHEyZBln5aX73wBicptiaR6gyPQa5SmrGb09riIm1tVU_5fZknR24vkZ4Tsiqs2rCVB2lJmcfAf0oEppkLWmfqlblXftI5XEixwNBxENhsI4mo4XUkDIWUmUBxMxoVaea4MRO4HZyXZIi6z0cikHbPQEJ_gdWXjG6UOBKBAfTKT6SLIUEjz?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/wBkdbLlZnyIiuc986ZbgECZTXreB5vlvlz2N2BfFNATNXysna27wYHGSyDhtl1yg1DjlhpKqKIhHGqxSuA7bSTm8LkhNFPTMxCFq1N3Ex2DTsmgZEBvVC0DGtLuU16ftTob7azPiLgM6BSjQNLoE4YhfwfGno3KOGxCh55G9X48tMJnDa0PfNbAeir2JcnkW?purpose=fullsize)
 
 ## Observation
 
@@ -569,5 +561,5 @@ Custom directory structures were created, configuration and log files were ident
 
 # Author
 
-Affan Malik
+Sarfaraj Ahamad
 
