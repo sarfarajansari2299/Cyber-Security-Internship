@@ -150,6 +150,254 @@ Web Application Analysis tools are used to test websites and web applications fo
 
 
 
+# 2. Customize Kali Linux Environment
+
+Kali Linux provides a customizable desktop environment that allows users to personalize themes, wallpapers, terminal settings, and install additional tools required for cybersecurity tasks.
+
+---
+
+# 1. Change Wallpaper and Theme
+
+## Steps Performed
+
+1. Opened Kali Linux desktop.
+2. Right-clicked on the desktop and selected **Change Background**.
+3. Selected a custom wallpaper.
+4. Opened Appearance Settings.
+5. Changed the system theme and icon style.
+
+## Wallpaper and Theme Customization
+
+![Image](https://images.openai.com/static-rsc-4/ngFov1393vYzA5h4B2-xHWBlP7gEMkp-pTBkhBSGVK5tN_Zh8lu4PMXm-5WbzmMokKfWAvjCE0cCkiXOSHamdPhKljJk4WvgE71sjTPAm66muWw13X8DxMv5oKO6gU9EAKk8vEIDXaORkJobMVGBLvJ53megiOpm_-QkzOcbakQgQdeeibcD0ucqWIida5Oq?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/YVc-SEQ926_VtBXpBESOzwI5rjZBadoARqrOClXT5bSawrVg-3mvJ8jRrEP6TeZh-XNVn9xljc6T210O-DDdfppQRIRmO_BcDt_m-KAvW82LIaQ1FFDSwuuEgCN4zLjQ2X6FxeeBbRo9kcGIqXQNJM3UZFu6Q6_TABCbzHCrpdYz0ALmLkl7VYz6vvo8VhF6?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/TtV3rfTMw9LDt4Nb7FWSs0do-cNf0HE9dSgQfNWxLSqOfivKPk9BHwsRn4QH3wB1VF3t6Q9Px72ucPHa0Q9-MZgQzm68oH8fHzw2jp6k08_TVlq5hIZHw9TcMcB0gftXVsHS2zIzCzVbUndjhoB0XLBI3Kb3i71NiE-hkk41MjE993QNPT0BP6M5ToPuAKho?purpose=fullsize)
+
+## Observation
+
+Customizing the desktop environment improves usability and provides a personalized working experience for penetration testers and cybersecurity professionals.
+
+---
+
+# 2. Install Additional Software Using apt-get
+
+## Purpose
+
+The `apt-get` package manager is used in Debian-based Linux distributions to install, update, and manage software packages.
+
+## Commands Used
+
+```bash id="92gk1d"
+sudo apt-get install vlc -y
+sudo apt-get install git -y
+sudo apt-get install curl -y
+```
+
+## Explanation of Installed Software
+
+| Software         | Purpose                |
+| ---------------- | ---------------------- |
+| VLC Media Player | Multimedia player      |
+| Git              | Version control system |
+| Curl             | Data transfer utility  |
+
+## Software Installation Terminal
+
+![Image](https://images.openai.com/static-rsc-4/TPdxvyZ6Uzh6ws6dyL2NF7H6nAbgzgEITV5gH3_GWbBXBq6eao3P9yDMzZlXasVttDG-Pe9kOYwoaTiNU6nNO75r-vwJtjAJ148KmY3nzxWVygoofpHq4WWEzHyiMs4U4Odz2VS-yiuZrdosLSdyGWMmfdqOj6L2jhbShsXZHBxClPHXRVoylf5Eh4qTItOS?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/k5k9b4ry61W57S5hF5G9YmvQ8awRmlRS5zMX040S0NB6kr7yhk3-CxpRRpa8cJUWPD_NU5b-PHobfUTNPA4GuOD2kys_wdjo7gcFMtx7TdHDA9gHAJ4CaedgcU2DrYCNhQ98K1P6sBqO8Rj6UH6RVUupNEfDZUdyBQ2F5bL8tlFqNO3sPkL_97m3_osdDw1y?purpose=fullsize)
+
+
+## Observation
+
+Using `apt-get` allows efficient installation and management of software packages directly from Kali Linux repositories.
+
+---
+
+# 3. Set Up Terminal Preferences
+
+## Steps Performed
+
+1. Opened Terminal Preferences.
+2. Changed font size and color scheme.
+3. Enabled transparency.
+4. Customized terminal appearance for better readability.
+
+## Terminal Customization
+
+![Image](https://images.openai.com/static-rsc-4/DJs3JovJiG4mtUn77gki1WwhvzLBOHoOc9Bi3P34fgDvGTZUljhTUa42OxyxxG2ndyoI2VPZmRTXgRUPLrCeCxwvkcsHyHahDKQZmnqfNynSw3fQyfaNdMc-MmUPRyr0juM9tmE13r1cTscWJ1jk6nTKIOGHxXLhroM-6njIYqUkzq5UXJyjt1NReyr3sTaB?purpose=fullsize)
+
+
+
+![Image](https://images.openai.com/static-rsc-4/o9pPg7_2fMOj-w_Jj-kWRKKGNP4EmB6q2Pdd5DX4y7a4IXZCvlHyLLNA0kmSQl3qofLKEE4sS-sT3GmcR4nfwoXx_Uxm4b-zbubHU67icXmsc7WPkGYNcjw7EWFIdXoeB1Q1WQC2t_SlUzHfhB2da7c-tLgqrxMPk8RUSUfJ-ckxCi8twLUruFwdAfsMdEnN?purpose=fullsize)
+
+## Observation
+
+Customized terminal settings improve visibility and enhance the command-line experience during penetration testing activities.
+
+---
+
+# 3. Update Kali Linux System
+
+Updating the operating system ensures the latest security patches, software updates, and tool improvements are installed.
+
+---
+
+# 1. Run System Update and Upgrade
+
+## Command Used
+
+```bash id="g1l4nk"
+sudo apt update && sudo apt upgrade -y
+```
+
+## Purpose
+
+| Command          | Description                                    |
+| ---------------- | ---------------------------------------------- |
+| sudo apt update  | Updates package repository information         |
+| sudo apt upgrade | Upgrades installed packages to latest versions |
+
+## System Update Process
+
+
+
+
+
+![Image](https://images.openai.com/static-rsc-4/3EPbbPmcEx9fEKnsUy9PDtYyLebvwrDxRqKgYum1UD3GnhaIrnnJVP4hd665LgDdYk-HUBhyfMqVehc1-Zc5YbYZn62bMV6JtXH1KlMuyI7WHA82WEsf2X4CayzysNvS4Xdl3FD_oJmKFxsDGnQgiy34jLqafhx6Z23kaenEjqESgxKzfJAAurwz4hpJe0Cl?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/SqKlS_m4SYePHWerK6kfGyhrUYjW2lsRcjwHLnl_zPF0YipVxwYYpEeyBwF5GjYy9XFIhMBlkLgOF_s83MsbBVICATGj8aFTK5TdsCz3rvqO3ek95W4FvRUM8RwWkxVoUM2XL7KRP4Jb7TnAlUFTZHMTLq2Y3wVkoMZ_3WfLdVwVjEjn84wVUCAbdpkW66Pe?purpose=fullsize)
+
+
+https://github.com/user-attachments/assets/3a38d69b-5bc1-4a98-8387-1895a2ac6c5e
+
+
+## Observation
+
+Regular system updates help maintain system security and improve tool performance.
+
+---
+
+# b. Install kali-linux-headless Package
+
+## Purpose
+
+The `kali-linux-headless` package installs essential command-line penetration testing tools without graphical desktop applications.
+
+## Command Used
+
+```bash id="u4h7mx"
+sudo apt install kali-linux-headless -y
+```
+
+## Headless Package Installation
+
+![Image](https://images.openai.com/static-rsc-4/yt9NaMQ3WmCpS3sRNl5mjxNiXaA1YYV_judzws3KbhjyVmMaMcQZZik-vfu5OTLXrM-7HaptroKEnj-Cv732Pd-eppVacAhbFlJZ_kdKohFn0apXP03I-hslRB7PFLV50hBRDDz2N88q830QESBd2Nig9KPcrsMeW34z2Y7pyPXCHT96qCslMg1wVo_ZiN66?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/yt9NaMQ3WmCpS3sRNl5mjxNiXaA1YYV_judzws3KbhjyVmMaMcQZZik-vfu5OTLXrM-7HaptroKEnj-Cv732Pd-eppVacAhbFlJZ_kdKohFn0apXP03I-hslRB7PFLV50hBRDDz2N88q830QESBd2Nig9KPcrsMeW34z2Y7pyPXCHT96qCslMg1wVo_ZiN66?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/xQew40sfCDxEx4Zrx5QaQD9Tf0aOvriQZXcjWGgvkfHS_GnNm_ZQB8tNTwBArSUunqBJJ9Sz0MT38wDWBc17YHhpqu4lofYG5wevbD77fLFWm3SAQ-4A0_ErToBFXpgSCj_MmgRKyijzEpiD8LjK7R36nkTRhmF7vmpMO9x5ASP4QV-nwpz0HHapFBsS3mdn?purpose=fullsize)
+
+## Observation
+
+The headless package is useful for lightweight environments and remote penetration testing setups.
+
+---
+
+# Important Commands Summary
+
+| Command                              | Function                            |
+| ------------------------------------ | ----------------------------------- |
+| sudo apt update                      | Refresh package list                |
+| sudo apt upgrade                     | Upgrade installed packages          |
+| sudo apt install kali-linux-headless | Install command-line security tools |
+| sudo apt-get install git             | Install Git                         |
+| sudo apt-get install curl            | Install Curl                        |
+| sudo apt-get install vlc             | Install VLC Media Player            |
+
+---
+
+# Challenges Faced
+
+| Problem                  | Solution                         |
+| ------------------------ | -------------------------------- |
+| Slow package download    | Checked internet connection      |
+| Repository update errors | Fixed sources.list configuration |
+| Permission denied error  | Used sudo privileges             |
+
+---
+
+# Conclusion
+
+In this assignment, the Kali Linux environment was successfully customized by changing wallpapers, themes, and terminal preferences. Additional software packages were installed using `apt-get`, and the Kali Linux operating system was updated using package management commands.
+
+The `kali-linux-headless` package was also installed successfully, providing additional command-line penetration testing tools for cybersecurity tasks.
+
+This activity improved understanding of Linux package management, system customization, and operating system maintenance in Kali Linux.
+
+---
+
+# Tools and Utilities Used
+
+* Kali Linux
+* apt-get Package Manager
+* Terminal Emulator
+* Git
+* Curl
+* VLC Media Player
+
+---
+
+# Author
+
+Affan Malik
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
