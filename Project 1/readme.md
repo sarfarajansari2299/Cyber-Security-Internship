@@ -272,7 +272,7 @@ All three virtual machines successfully communicated with each other through the
 ```text
                     +----------------------+
                     |     Host Machine     |
-                    |   VirtualBox / VMW   |
+                    |    Windows 10 
                     +----------+-----------+
                                |
                      =====================
