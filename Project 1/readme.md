@@ -293,11 +293,6 @@ All three virtual machines successfully communicated with each other through the
 ![Image](https://images.openai.com/static-rsc-4/WygvHcyQRy4gvIDkffcYtWQlsK7SrYzrZzgE_muvPIO-i6pgSgb_Vfy8IXn9C90KPIcUutAXulmhowqeaPZCHYtdKAeiz5RdiQRIv9RP2_LzkUszH3fl_0Hv-47Rb_oFySNc0swFxakCypXBdn0li_6IV5Vmktwpxu3bsK1mWv_GR12Lu80BxGl3FkqEZyRt?purpose=fullsize)
 
 
-
-![Image](https://images.openai.com/static-rsc-4/8nJ-V7rtxJtchK6oJx21mzmt8v6MLyEYjVZ4X5Lw12sC9Yi2tMJplytSSN5FeHkRYK_9HSJ4CZAvkIlss3R6OOqhp8ZoywiO7nVdfC5Z4Rc1DDFAkyIUY0cjQAYdvc4qp8RscKYEH4BoxSkEPw96HS51t97WxL6ZsXw9gWtiPlyAUgObOWGiuDYsX58R7HMP?purpose=fullsize)
-
-
-
 ---
 
 # Challenges Faced
