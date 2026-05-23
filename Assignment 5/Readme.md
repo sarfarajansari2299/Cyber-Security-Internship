@@ -455,7 +455,7 @@ Monitor and analyze network traffic between virtual machines.
 
 ## Screenshot
 
-![Screenshot](https://i.imgur.com/z6V5Q9B.png)
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/fb41c16b-0544-48ae-a583-1779b09d3f91" />
 
 ---
 
@@ -500,7 +500,8 @@ netstat -tulnp
 
 ## Screenshot
 
-![Screenshot](https://i.imgur.com/H2f6R1L.png)
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/171941c1-440d-458a-9d49-e91c5b059f5d" />
+
 
 ---
 
@@ -515,8 +516,8 @@ ss -tulnp
 ---
 
 ## Screenshot
+<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/12d158eb-6640-4589-bced-6611eb6802d7" />
 
-![Screenshot](https://i.imgur.com/F7n3P8Q.png)
 
 ---
 
