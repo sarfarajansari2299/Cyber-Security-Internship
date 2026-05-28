@@ -2,9 +2,10 @@
 
 ## Overview
 
-This repository documents my hands-on cybersecurity internship practical assignments focused on virtual lab setup, Linux system administration, networking, and basic penetration testing concepts. The lab environment was built using Oracle VM VirtualBox and multiple virtual machines including Kali Linux, Windows 10, and Metasploitable2. :contentReference[oaicite:0]{index=0}
+This repository documents my hands-on cybersecurity internship practical assignments focused on virtual lab setup, Linux system administration, networking, and basic penetration testing concepts. The lab environment was built using Oracle VM VirtualBox and multiple virtual machines including Kali Linux, Windows 10, and Metasploitable2. 
 
-The internship activities covered:
+## The internship activities covered:
+
 - Virtual machine setup
 - Linux command-line practice
 - Secure network configuration
@@ -286,6 +287,314 @@ Through this internship, I gained practical experience in:
 - Secure environment configuration
 
 ---
+
+
+# Assignment 6: Network Mapping & IP Address Mastery
+
+## Learning Outcomes
+
+* IP Addressing
+* Subnetting
+* Network Discovery
+* Protocol Identification
+
+
+
+### 1. Network Discovery
+
+* Used `Nmap` to scan virtual lab network
+* Identified active hosts and IP addresses
+* Detected open ports and services
+* Created network topology diagram
+
+### 2. IP Addressing Practice
+
+* Configured static IPv4 addresses
+* Practiced subnetting calculations
+* Configured IPv6 on one VM
+* Tested inter-subnet connectivity
+
+### 3. Protocol Identification
+
+* Captured packets using Wireshark
+* Identified protocols:
+
+  * TCP
+  * UDP
+  * ICMP
+  * ARP
+  * DNS
+  * HTTP
+* Analyzed packet headers and payloads
+* Applied protocol filters
+
+### 4. Port Exploration
+
+Scanned common ports:
+
+| Port | Service |
+| ---- | ------- |
+| 21   | FTP     |
+| 22   | SSH     |
+| 23   | Telnet  |
+| 25   | SMTP    |
+| 53   | DNS     |
+| 80   | HTTP    |
+| 443  | HTTPS   |
+| 3389 | RDP     |
+| 445  | SMB     |
+
+### Useful Commands
+
+```bash
+# Basic Nmap Scan
+nmap 192.168.1.0/24
+
+# Service Detection
+nmap -sV 192.168.1.1
+
+# Ping Test
+ping google.com
+```
+
+---
+
+# Assignment 7: Protocol Analysis with Wireshark
+
+## Learning Outcomes
+
+* Network Protocol Analysis
+* Packet Inspection
+* Traffic Monitoring
+
+### Packet Capture
+
+* Captured HTTP traffic
+* Generated DNS traffic using `nslookup`
+* Captured ICMP packets using `ping`
+* Observed SSH/Telnet sessions
+
+### Deep Packet Inspection
+
+* Followed TCP streams
+* Analyzed TCP three-way handshake:
+
+  * SYN
+  * SYN-ACK
+  * ACK
+* Identified HTTP GET & POST requests
+* Extracted HTTP transferred files
+
+### Wireshark Filters Used
+
+```bash
+tcp
+udp
+http
+dns
+arp
+icmp
+```
+
+### Filter by IP
+
+```bash
+ip.addr == 192.168.1.10
+```
+
+### Filter by Port
+
+```bash
+tcp.port == 80
+```
+
+### Combined Filters
+
+```bash
+http && ip.addr == 192.168.1.10
+```
+
+---
+
+# Assignment 8: Windows Login Bypass Techniques
+
+##  Learning Outcomes
+
+* Desktop Security
+* Authentication Bypass
+* Password Recovery
+
+## ⚠️ Educational Purpose Only
+
+Performed only in a controlled virtual lab environment.
+
+## Techniques Practiced
+
+### Sticky Keys Bypass
+
+* Booted Windows VM using Linux live ISO
+* Backed up `sethc.exe`
+* Replaced with `cmd.exe`
+* Triggered Sticky Keys at login screen
+
+### chntpw Password Reset
+
+* Mounted Windows partition
+* Viewed user accounts
+* Reset/Cleared passwords
+
+### Utilman.exe Bypass
+
+* Replaced `utilman.exe`
+* Opened system-level CMD from login screen
+
+### Ophcrack Password Recovery
+
+* Booted using Ophcrack Live CD
+* Observed rainbow table attack
+
+### VM Snapshot Practice
+
+* Created snapshots before testing
+* Restored clean VM state after experiments
+
+---
+
+#  Assignment 9: Password Attack Lab
+
+##  Learning Outcomes
+
+* Password Cracking
+* Dictionary Attacks
+* Offline & Online Attacks
+
+
+### Offline Password Cracking
+
+* Extracted password hashes
+* Used:
+
+  * John the Ripper
+  * Hashcat
+* Performed dictionary attacks using `rockyou.txt`
+
+### Hash Identification
+
+Identified:
+
+* MD5
+* SHA1
+* SHA256
+* NTLM
+
+### Online Attack Simulation
+
+* Configured DVWA
+* Used Hydra for brute-force attacks
+* Monitored successful/failed attempts
+
+### Custom Wordlists
+
+Generated wordlists using:
+
+* Crunch
+* CeWL
+
+### Defense Analysis
+
+* Compared weak vs strong passwords
+* Observed attack speed differences
+
+---
+
+#  Assignment 10: VPN, Proxy & DNS Configuration Lab
+
+##  Learning Outcomes
+
+* VPN Configuration
+* Proxy Setup
+* DNS Manipulation
+* Traffic Anonymization
+
+
+### VPN Setup
+
+* Installed OpenVPN/WireGuard
+* Connected using ProtonVPN
+* Verified IP address changes
+* Tested DNS leaks
+
+### Proxy Configuration
+
+* Configured FoxyProxy
+* Used Burp Suite as intercepting proxy
+* Modified HTTP requests
+
+### DNS Practice
+
+Used:
+
+```bash
+nslookup
+dig
+```
+
+Queried:
+
+* A Records
+* AAAA Records
+* MX Records
+* NS Records
+* TXT Records
+
+Configured DNS servers:
+
+```bash
+8.8.8.8
+1.1.1.1
+```
+
+### DNS Spoofing Demo
+
+* Modified `/etc/hosts`
+* Redirected domains locally
+* Demonstrated DNS cache poisoning concepts
+
+### Tor Network
+
+* Installed Tor Browser
+* Explored `.onion` services
+* Observed multi-hop routing
+
+---
+
+#  Tools Used
+
+| Tool            | Purpose             |
+| --------------- | ------------------- |
+| Kali Linux      | Penetration Testing |
+| Wireshark       | Packet Analysis     |
+| Nmap            | Network Scanning    |
+| Burp Suite      | Web Proxy           |
+| Hydra           | Brute Force Testing |
+| John the Ripper | Password Cracking   |
+| Hashcat         | GPU Cracking        |
+| DVWA            | Vulnerable Web App  |
+| OpenVPN         | VPN Testing         |
+| Tor Browser     | Anonymous Browsing  |
+
+---
+
+# ⚠️ Disclaimer
+
+This project is created strictly for:
+
+* Educational purposes
+* Ethical hacking practice
+* Cybersecurity lab simulations
+
+Do not use these techniques on unauthorized systems.
+
 
 # Author
 
