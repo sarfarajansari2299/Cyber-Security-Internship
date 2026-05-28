@@ -88,7 +88,7 @@ The virtual cybersecurity lab was configured using a secure NAT Network / Host-O
 
 # Internship Projects
 
-## Project 1 – Build Your Virtual Lab Environment
+## Assignment 1 – Build Your Virtual Lab Environment
 
 ### Tasks Performed
 - Installed Oracle VM VirtualBox
@@ -108,7 +108,7 @@ The virtual cybersecurity lab was configured using a secure NAT Network / Host-O
 
 ---
 
-## Project 2 – Kali Linux Environment Exploration
+## Assignment 2 – Kali Linux Environment Exploration
 
 ### Tasks Performed
 - Explored Kali Linux desktop environment
@@ -139,7 +139,7 @@ uname -a
 
 ---
 
-## Project 3 – Linux File System Treasure Hunt
+## Assignment 3 – Linux File System Treasure Hunt
 
 ### Tasks Performed
 - Explored Linux directory structure
@@ -219,7 +219,7 @@ chown user:user file.txt
 
 ---
 
-## Project 5 – Secure Lab Configuration Challenge
+## Assignment 5 – Secure Lab Configuration Challenge
 
 ### Tasks Performed
 - Configured NAT Network
@@ -287,28 +287,8 @@ Through this internship, I gained practical experience in:
 
 ---
 
-# Repository Structure
-
-```text
-cybersecurity-internship/
-│
-├── README.md
-├── Project-1/
-├── Project-2/
-├── Project-3/
-├── Project-4/
-├── Project-5/
-
-```
-
----
-
 # Author
 
 Sarfaraj Ahamad
 
 ---
-
-# Disclaimer
-
-This project was created strictly for educational and ethical cybersecurity learning purposes inside an isolated virtual lab environment.
