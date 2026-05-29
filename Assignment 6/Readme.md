@@ -1,483 +1,585 @@
-# Assignment 6: Network Mapping & IP Address Mastery
+# ASSIGNMENT 1: NETWORK MAPPING & IP ADDRESS MASTERY
 
 ## Objective
 
-The objective of this assignment is to gain hands-on experience with network discovery, IP addressing, subnetting, protocol analysis, and port scanning using Kali Linux, Wireshark, Nmap, Metasploitable2, and Windows 10 virtual machines.
+The objective of this assignment is to perform network mapping, IP address configuration, protocol identification, and port exploration within a virtual cybersecurity lab environment using Nmap, Wireshark, and Linux networking tools.
 
 ---
 
-# 1. Network Discovery Using Nmap
+# 1. Network Discovery in Lab Environment
 
 ## Objective
 
-Discover active hosts within the virtual lab network and identify running services.
+Discover all active hosts, open ports, and services running within the virtual lab network.
 
-### Step 1: Identify Local IP Address
+---
 
-#### Command
+# a. Use Nmap to Scan the Virtual Network
+
+## Steps Performed
+
+1. Opened terminal in Kali Linux.
+2. Identified the local subnet using `ip addr`.
+3. Ran a full network scan using Nmap against the host-only network range.
+
+---
+
+## Command
 
 ```bash
-ip a
+nmap -sn 192.168.56.0/24
 ```
 
-### Screenshot
+> `-sn` performs a ping scan (host discovery only, no port scan).
 
-<img width="1010" height="816" alt="image" src="https://github.com/user-attachments/assets/c0e2a89a-c826-4bda-a751-c063d3cbbf1f" />
+---
 
+## Screenshot
+
+<img width="1010" height="816" alt="image" src="https://github.com/user-attachments/assets/08b2e6e9-b0fc-4446-815f-dcfd14d5ee80" />
+
+
+<img width="1010" height="816" alt="image" src="https://github.com/user-attachments/assets/2a422ed7-74c9-4d08-b3d6-70ff964cf325" />
 
 
 ---
 
-### Step 2: Discover Active Hosts
+# b. Identify All Active Hosts and Their IP Addresses
 
-#### Command
+## Hosts Discovered
+
+| Hostname        | IP Address     | Status |
+| --------------- | -------------- | ------ |
+| Kali Linux      | 192.168.56.102 | Up     |
+| Metasploitable2 | 192.168.56.104 | Up     |
+| Windows 10      | 192.168.56.103 | Up     |
+
+---
+
+## Command
 
 ```bash
-nmap -sn 10.0.2.3/24
+nmap -sn 192.168.56.0/24 -oN host_discovery.txt
 ```
 
-#### Result
+---
 
-| Host            | IP Address |
-| --------------- | ---------- |
-| Kali Linux      | 10.0.2.3   |
-| Metasploitable2 | 10.0.2.4   |
-| Windows 10      | 10.0.2.15  |
+## Screenshot
 
-### Screenshot
-
-<img width="1010" height="816" alt="image" src="https://github.com/user-attachments/assets/cf3a2a39-fa31-4721-bcfa-ea710a0f023d" />
+<img width="1010" height="816" alt="image" src="https://github.com/user-attachments/assets/ec4201e5-65be-423c-bbf0-afeeaaa6746a" />
 
 
 ---
 
-### Step 3: Scan Open Ports
+# c. Determine Open Ports on Each Host
 
-#### Command
+## Command
 
 ```bash
-nmap 10.0.2.16
-nmap 10.0.2.17
+nmap 192.168.56.104
 ```
-
-### Open Ports Found
-
-#### Metasploitable2
-
-| Port | Service      |
-|------|-------------|
-| 21   | FTP         |
-| 22   | SSH         |
-| 23   | Telnet      |
-| 25   | SMTP        |
-| 53   | Domain (DNS)|
-| 80   | HTTP        |
-| 111  | RPCBind     |
-| 139  | NetBIOS-SSN |
-| 445  | SMB         |
-| 512  | Exec        |
-| 513  | Login       |
-| 514  | Shell       |
-| 1524 | Ingreslock  |
-| 2049 | NFS         |
-| 2121 | CCProxy-FTP |
-| 3306 | MySQL       |
-| 3632 | DistCCD     |
-| 5432 | PostgreSQL  |
-| 5900 | VNC         |
-| 6000 | X11         |
-| 6667 | IRC         |
-| 8009 | AJP13       |
-
-#### Windows 10
-
-| Port | Service |
-| ---- | ------- |
-| 135  | RPC     |
-| 139  | NetBIOS |
-| 445  | SMB     |
-| 3389 | RDP     |
-
-### Screenshot
-
-> Insert screenshot showing Nmap port scan results.
 
 ---
 
-### Step 4: Service Detection Scan
+## Open Ports Found on Metasploitable2 (192.168.56.104)
 
-#### Command
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+23/tcp   open  telnet
+25/tcp   open  smtp
+53/tcp   open  domain
+80/tcp   open  http
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+512/tcp  open  exec
+513/tcp  open  login
+514/tcp  open  shell
+1099/tcp open  rmiregistry
+1524/tcp open  ingreslock
+2049/tcp open  nfs
+2121/tcp open  ccproxy-ftp
+3306/tcp open  mysql
+5432/tcp open  postgresql
+5900/tcp open  vnc
+6000/tcp open  X11
+6667/tcp open  irc
+8009/tcp open  ajp13
+8180/tcp open  unknown
 
-```bash
-nmap -sV 10.0.2.16
-```
-
-### Screenshot
-
-> Insert screenshot showing service versions detected by Nmap.
-
----
-
-# 2. Network Topology Diagram
-
-## Network Diagram
-
-```text
-                    +-------------------+
-                    |    Host Machine   |
-                    |     Windows 10    |
-                    +---------+---------+
-                              |
-                    =====================
-                          NAT Network
-                    =====================
-                     /         |         \
-                    /          |          \
-                   /           |           \
-        +---------------+ +---------------+ +---------------+
-        | Kali Linux    | |Metasploitable2| | Windows 10 VM |
-        | 10.0.2.15     | | 10.0.2.16     | | 10.0.2.17     |
-        +---------------+ +---------------+ +---------------+
-```
-
-### Screenshot
-
-> Insert screenshot of VirtualBox network configuration showing all VMs connected to the same NAT Network.
 
 ---
 
-# 3. IP Address Configuration
+## Screenshot
 
-## Static IPv4 Address Configuration
+### Open Ports Found on Metasploitable2 (192.168.56.104)
 
-### Kali Linux
+<img width="1005" height="679" alt="image" src="https://github.com/user-attachments/assets/4047079e-5b60-4ef7-bf4b-a4c59ddc3b8a" />
 
-#### Edit Network Configuration
+### Open Ports Found on Windows 10 (192.168.56.103)
+
+<img width="1005" height="679" alt="image" src="https://github.com/user-attachments/assets/4d09197b-db75-420a-a547-4febd872e6b1" />
+
+
+### Open Ports Found on kali (192.168.56.102)
+
+---
+
+# d. Create Network Diagram
+
+## Network Topology
+
+```
+                    [VirtualBox Host Machine]
+                            |
+               ┌────────────┴────────────┐
+               │     Host-Only Adapter   │
+               │    192.168.56.0/24      │
+               └────────────┬────────────┘
+                            │
+          ┌─────────────────┼─────────────────┐
+          │                 │                 │
+   ┌──────┴──────┐   ┌──────┴──────┐  ┌──────┴──────┐
+   │ Kali Linux  │   │Metasploitable│ │ Windows 10  │
+   │192.168.56.102│  │192.168.56.104│ │192.168.56.103│
+   └─────────────┘   └─────────────┘  └─────────────┘
+```
+
+---
+
+## Observation
+
+Nmap successfully discovered all three VMs within the isolated host-only network. All machines responded to ping and port scans, confirming proper network configuration.
+
+---
+
+# 2. IP Addressing Practice
+
+## Objective
+
+Configure static IPv4 and IPv6 addresses across virtual machines and test inter-subnet connectivity.
+
+---
+
+# a. Configure Static IPv4 Addresses on All VMs
+
+## Steps Performed
+
+1. Edited the network interfaces configuration file on Kali Linux.
+2. Assigned a static IP address within the host-only subnet.
+3. Restarted the networking service to apply changes.
+
+---
+
+## Command (Kali Linux)
 
 ```bash
 sudo nano /etc/network/interfaces
 ```
 
-#### Example Configuration
+## Configuration Added
 
-```bash
+```text
 auto eth0
 iface eth0 inet static
-address 192.168.10.10
-netmask 255.255.255.0
-gateway 192.168.10.1
+    address 192.168.56.101
+    netmask 255.255.255.0
+    gateway 192.168.56.1
 ```
-
-### Screenshot
-
-> Insert screenshot showing static IP configuration on Kali Linux.
 
 ---
 
-### Windows 10 Static IP
-
-1. Open Network Settings
-2. Change Adapter Options
-3. Open IPv4 Properties
-4. Assign Static IP Address
-
-#### Example
-
-```text
-IP Address : 192.168.20.10
-Subnet Mask: 255.255.255.0
-Gateway    : 192.168.20.1
-```
-
-### Screenshot
-
-> Insert screenshot showing Windows IPv4 configuration screen.
-
----
-
-# 4. Subnetting Practice
-
-## Example 1
-
-### Network
-
-```text
-192.168.1.0/24
-```
-
-### Calculation
-
-| Item              | Value         |
-| ----------------- | ------------- |
-| Network Address   | 192.168.1.0   |
-| First Host        | 192.168.1.1   |
-| Last Host         | 192.168.1.254 |
-| Broadcast Address | 192.168.1.255 |
-| Total Hosts       | 254           |
-
----
-
-## Example 2
-
-### Network
-
-```text
-192.168.1.0/26
-```
-
-### Calculation
-
-| Item              | Value        |
-| ----------------- | ------------ |
-| Network Address   | 192.168.1.0  |
-| First Host        | 192.168.1.1  |
-| Last Host         | 192.168.1.62 |
-| Broadcast Address | 192.168.1.63 |
-| Total Hosts       | 62           |
-
-### Screenshot
-
-> Insert screenshot from subnet calculator showing subnet calculations.
-
----
-
-# 5. IPv6 Configuration
-
-## Configure IPv6 Address
-
-### Command
+## Restart Networking
 
 ```bash
-sudo ip -6 addr add 2001:db8::10/64 dev eth0
+sudo systemctl restart networking
 ```
 
-### Verify Configuration
+---
+
+## Verify IP Assignment
 
 ```bash
-ip -6 addr
+ip addr show eth0
 ```
-
-### Screenshot
-
-> Insert screenshot showing IPv6 address assigned to Kali Linux.
 
 ---
 
-# 6. Connectivity Testing Between Subnets
+## Screenshot
 
-## Ping Test
+<!-- Add screenshot of static IP configuration here -->
 
-### Command
+---
+
+# b. Subnetting Calculations
+
+## Subnet Practice Table
+
+| Network Address | Subnet Mask     | CIDR | Hosts Available | Broadcast Address |
+| --------------- | --------------- | ---- | --------------- | ----------------- |
+| 192.168.56.0    | 255.255.255.0   | /24  | 254             | 192.168.56.255    |
+| 192.168.56.0    | 255.255.255.128 | /25  | 126             | 192.168.56.127    |
+| 192.168.56.0    | 255.255.255.192 | /26  | 62              | 192.168.56.63     |
+| 10.0.2.0        | 255.255.255.0   | /24  | 254             | 10.0.2.255        |
+
+---
+
+## Tool Used
 
 ```bash
-ping 192.168.20.10
+ipcalc 192.168.56.0/24
 ```
 
-### IPv6 Ping
+---
+
+## Screenshot
+
+<!-- Add screenshot of ipcalc output here -->
+
+---
+
+# c. Set Up IPv6 Address on Kali Linux
+
+## Command
 
 ```bash
-ping6 2001:db8::10
+sudo ip -6 addr add fd00::1/64 dev eth0
 ```
 
-### Screenshot
-
-> Insert screenshot showing successful IPv4 and IPv6 ping replies.
-
 ---
 
-# 7. Protocol Identification Using Wireshark
+## Verify IPv6 Assignment
 
-## Start Packet Capture
-
-1. Open Wireshark
-2. Select Active Interface
-3. Start Capture
-4. Generate Network Traffic
-
-### Screenshot
-
-> Insert screenshot showing Wireshark capture interface.
-
----
-
-## Identified Protocols
-
-| No | Protocol | Purpose                |
-| -- | -------- | ---------------------- |
-| 1  | ARP      | Address Resolution     |
-| 2  | ICMP     | Ping                   |
-| 3  | TCP      | Reliable Communication |
-| 4  | UDP      | Fast Communication     |
-| 5  | DNS      | Name Resolution        |
-| 6  | HTTP     | Web Traffic            |
-| 7  | HTTPS    | Secure Web Traffic     |
-| 8  | DHCP     | IP Assignment          |
-| 9  | SMB      | File Sharing           |
-| 10 | SSH      | Secure Remote Access   |
-
-### Screenshot
-
-> Insert screenshot showing Wireshark protocol list.
-
----
-
-## Protocol Filters Used
-
-### ARP
-
-```text
-arp
+```bash
+ip -6 addr show eth0
 ```
 
-### ICMP
+---
+
+## Screenshot
+
+<!-- Add screenshot of IPv6 address assignment here -->
+
+---
+
+# d. Test Connectivity Between VMs
+
+## IPv4 Ping Test
+
+```bash
+ping 192.168.56.102
+```
+
+## IPv6 Ping Test
+
+```bash
+ping6 fd00::2
+```
+
+---
+
+## Screenshot
+
+<!-- Add screenshot of ping test results here -->
+
+---
+
+## Observation
+
+Static IP addresses were successfully configured on all VMs. Subnetting calculations confirmed the correct number of usable hosts per subnet. IPv6 addressing was configured and verified on Kali Linux.
+
+---
+
+# 3. Protocol Identification Challenge
+
+## Objective
+
+Capture live network traffic using Wireshark and identify 10 different protocols by analyzing packet headers and payloads.
+
+---
+
+# a. Capture Traffic Using Wireshark
+
+## Steps Performed
+
+1. Launched Wireshark in Kali Linux with root privileges.
+2. Selected the active `eth0` network interface.
+3. Started live packet capture.
+4. Generated traffic using ping, curl, SSH, and DNS lookup commands.
+
+---
+
+## Command to Launch Wireshark (CLI)
+
+```bash
+sudo wireshark &
+```
+
+---
+
+## Screenshot
+
+<!-- Add screenshot of Wireshark capture session here -->
+
+---
+
+# b. Identify 10 Different Protocols
+
+## Protocols Identified
+
+| # | Protocol | Layer       | Description                                      | Filter Used           |
+|---|----------|-------------|--------------------------------------------------|-----------------------|
+| 1 | ICMP     | Network     | Internet Control Message Protocol (ping traffic) | `icmp`                |
+| 2 | ARP      | Data Link   | Address Resolution Protocol (IP-MAC mapping)     | `arp`                 |
+| 3 | TCP      | Transport   | Transmission Control Protocol (reliable stream)  | `tcp`                 |
+| 4 | UDP      | Transport   | User Datagram Protocol (connectionless)          | `udp`                 |
+| 5 | DNS      | Application | Domain Name System (hostname resolution)         | `dns`                 |
+| 6 | HTTP     | Application | Hypertext Transfer Protocol (web traffic)        | `http`                |
+| 7 | SSH      | Application | Secure Shell (encrypted remote access)           | `tcp.port == 22`      |
+| 8 | FTP      | Application | File Transfer Protocol (file transfers)          | `ftp`                 |
+| 9 | DHCP     | Application | Dynamic Host Configuration Protocol (IP leasing) | `bootp`               |
+| 10| NBNS     | Application | NetBIOS Name Service (Windows name resolution)   | `nbns`                |
+
+---
+
+## Screenshot
+
+<!-- Add screenshot of Wireshark showing identified protocols here -->
+
+---
+
+# c. Analyze Packet Headers and Payloads
+
+## ICMP Packet Analysis
+
+```
+Frame: 64 bytes
+Ethernet Header:
+  Source MAC: 08:00:27:xx:xx:xx
+  Destination MAC: 08:00:27:xx:xx:xx
+IP Header:
+  Source IP: 192.168.56.101
+  Destination IP: 192.168.56.102
+  TTL: 64
+  Protocol: ICMP (1)
+ICMP Header:
+  Type: 8 (Echo Request)
+  Code: 0
+  Checksum: Valid
+```
+
+---
+
+## Screenshot
+
+<!-- Add screenshot of packet header analysis in Wireshark here -->
+
+---
+
+# d. Filter Traffic by Protocol Type
+
+## Wireshark Display Filters Used
 
 ```text
 icmp
-```
-
-### TCP
-
-```text
+arp
 tcp
-```
-
-### UDP
-
-```text
 udp
-```
-
-### DNS
-
-```text
 dns
+http
+tcp.port == 22
+ftp
+bootp
+nbns
 ```
 
-### HTTP
+---
+
+## Command to Capture Traffic via CLI (tcpdump)
+
+```bash
+sudo tcpdump -i eth0 -w capture.pcap
+```
+
+---
+
+## Open Capture in Wireshark
+
+```bash
+wireshark capture.pcap
+```
+
+---
+
+## Screenshot
+
+<!-- Add screenshot of filtered Wireshark output here -->
+
+---
+
+## Observation
+
+Wireshark successfully captured and displayed multiple protocol types. Filtering by protocol allowed targeted analysis of specific traffic types within the virtual lab network.
+
+---
+
+# 4. Port Number Exploration
+
+## Objective
+
+Scan and identify common network ports and the services running on them using Nmap service detection.
+
+---
+
+# a. Scan Common Ports
+
+## Command
+
+```bash
+nmap -p 21,22,23,25,53,80,443,3389,445 192.168.56.102
+```
+
+---
+
+## Results
+
+| Port | State  | Service  |
+| ---- | ------ | -------- |
+| 21   | Open   | FTP      |
+| 22   | Open   | SSH      |
+| 23   | Open   | Telnet   |
+| 25   | Open   | SMTP     |
+| 53   | Open   | DNS      |
+| 80   | Open   | HTTP     |
+| 443  | Closed | HTTPS    |
+| 445  | Open   | SMB      |
+| 3389 | Closed | RDP      |
+
+---
+
+## Screenshot
+
+<!-- Add screenshot of port scan output here -->
+
+---
+
+# b. Identify Services Running on Each Port
+
+## Using Nmap Service Detection
+
+```bash
+nmap -sV -p 21,22,23,25,53,80,443,3389,445 192.168.56.102
+```
+
+---
+
+## Screenshot
+
+<!-- Add screenshot of service version detection here -->
+
+---
+
+# c. Nmap Service Detection
+
+## Command
+
+```bash
+nmap -sV 192.168.56.102
+```
+
+---
+
+## Sample Output
 
 ```text
-http
+PORT     STATE  SERVICE     VERSION
+21/tcp   open   ftp         vsftpd 2.3.4
+22/tcp   open   ssh         OpenSSH 4.7p1
+23/tcp   open   telnet      Linux telnetd
+25/tcp   open   smtp        Postfix smtpd
+80/tcp   open   http        Apache httpd 2.2.8
+3306/tcp open   mysql       MySQL 5.0.51a
+5432/tcp open   postgresql  PostgreSQL 8.3
+8180/tcp open   http        Apache Tomcat/Coyote
 ```
 
-### Screenshot
+---
 
-> Insert screenshot showing Wireshark display filters in action.
+## Screenshot
+
+<!-- Add screenshot of nmap -sV output here -->
 
 ---
 
-# 8. Packet Analysis
+# d. 20 Common Port Numbers Reference
 
-## Examined Fields
-
-### Ethernet Header
-
-* Source MAC Address
-* Destination MAC Address
-
-### IP Header
-
-* Source IP Address
-* Destination IP Address
-* TTL
-
-### TCP Header
-
-* Source Port
-* Destination Port
-* Flags
-
-### Screenshot
-
-> Insert screenshot showing packet details pane in Wireshark.
-
----
-
-# 9. Port Number Exploration
-
-## Common Port Scan
-
-### Command
-
-```bash
-nmap -p 21,22,23,25,53,80,443,3389,445 10.0.2.16
-```
-
-### Screenshot
-
-> Insert screenshot showing targeted port scan results.
+| Port | Protocol | Service                           | Description                                        |
+| ---- | -------- | --------------------------------- | -------------------------------------------------- |
+| 20   | TCP      | FTP Data                          | File Transfer Protocol – data channel              |
+| 21   | TCP      | FTP Control                       | File Transfer Protocol – command channel           |
+| 22   | TCP      | SSH                               | Secure Shell – encrypted remote access             |
+| 23   | TCP      | Telnet                            | Unencrypted remote terminal access                 |
+| 25   | TCP      | SMTP                              | Simple Mail Transfer Protocol – email sending      |
+| 53   | TCP/UDP  | DNS                               | Domain Name System – hostname resolution           |
+| 67   | UDP      | DHCP Server                       | Dynamic Host Configuration Protocol – IP leasing  |
+| 68   | UDP      | DHCP Client                       | DHCP client port                                   |
+| 80   | TCP      | HTTP                              | HyperText Transfer Protocol – web traffic          |
+| 110  | TCP      | POP3                              | Post Office Protocol – email retrieval             |
+| 143  | TCP      | IMAP                              | Internet Message Access Protocol – email access    |
+| 443  | TCP      | HTTPS                             | HTTP Secure – encrypted web traffic                |
+| 445  | TCP      | SMB                               | Server Message Block – Windows file sharing        |
+| 3306 | TCP      | MySQL                             | MySQL database service                             |
+| 3389 | TCP      | RDP                               | Remote Desktop Protocol – Windows remote access    |
+| 5432 | TCP      | PostgreSQL                        | PostgreSQL database service                        |
+| 8080 | TCP      | HTTP Alternate                    | Alternate HTTP port / proxy                        |
+| 8443 | TCP      | HTTPS Alternate                   | Alternate HTTPS port                               |
+| 139  | TCP      | NetBIOS-SSN                       | NetBIOS Session Service                            |
+| 6667 | TCP      | IRC                               | Internet Relay Chat                                |
 
 ---
 
-## Service Detection
+## Screenshot
 
-### Command
-
-```bash
-nmap -sV 10.0.2.16
-```
-
-### Screenshot
-
-> Insert screenshot showing service versions.
+<!-- Add screenshot of nmap port number documentation here -->
 
 ---
 
-# 10. Twenty Common Port Numbers
+## Observation
 
-| Port | Service         |
-| ---- | --------------- |
-| 20   | FTP Data        |
-| 21   | FTP             |
-| 22   | SSH             |
-| 23   | Telnet          |
-| 25   | SMTP            |
-| 53   | DNS             |
-| 67   | DHCP            |
-| 68   | DHCP Client     |
-| 69   | TFTP            |
-| 80   | HTTP            |
-| 110  | POP3            |
-| 123  | NTP             |
-| 135  | RPC             |
-| 137  | NetBIOS         |
-| 139  | NetBIOS Session |
-| 143  | IMAP            |
-| 161  | SNMP            |
-| 389  | LDAP            |
-| 443  | HTTPS           |
-| 445  | SMB             |
-
----
-
-# Tools Used
-
-* Kali Linux
-* Nmap
-* Wireshark
-* VirtualBox
-* Windows 10
-* Metasploitable2
+Nmap's service detection (`-sV`) accurately identified the software versions running on open ports. This information is critical for identifying potentially vulnerable services during penetration testing.
 
 ---
 
 # Challenges Faced
 
-| Problem                         | Solution                           |
-| ------------------------------- | ---------------------------------- |
-| Host discovery not working      | Verified NAT Network configuration |
-| VM connectivity issues          | Checked IP configuration           |
-| Wireshark not capturing packets | Selected correct network interface |
-| Service detection slow          | Used targeted Nmap scans           |
+| Problem                              | Solution                                          |
+| ------------------------------------ | ------------------------------------------------- |
+| Nmap scan returned no hosts          | Verified correct subnet range with `ip addr`      |
+| IPv6 address not persisting on reboot| Added configuration to `/etc/network/interfaces`  |
+| Wireshark required root permissions  | Launched with `sudo wireshark`                    |
+| Some ports showing as filtered       | Used `-Pn` flag to bypass ping-based host check   |
 
 ---
 
 # Conclusion
 
-This assignment provided practical experience in network discovery, IP addressing, subnetting, protocol analysis, and port scanning. Nmap was used to identify hosts, open ports, and services, while Wireshark was used to capture and analyze network traffic. Static IPv4, IPv6, and subnetting concepts were successfully implemented and tested within the virtual lab environment.
+In this assignment, network mapping, IP address configuration, protocol identification, and port exploration were successfully performed within the virtual cybersecurity lab. Nmap was used to discover hosts and identify open services, Wireshark captured and analyzed 10 different network protocols, static IPv4 and IPv6 addresses were configured, and 20 common port numbers were documented. These skills form a fundamental foundation for cybersecurity and penetration testing work.
+
+---
+
+# Tools and Platforms Used
+
+* Oracle VirtualBox
+* Kali Linux
+* Nmap
+* Wireshark
+* tcpdump
+* ipcalc
+* Linux Networking Tools (`ip`, `ifconfig`, `ping`, `ping6`)
 
 ---
 
 # Author
 
-**Sarfaraj Ahamad**
-
+sarfaraj Ahamad
