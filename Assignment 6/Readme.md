@@ -79,50 +79,27 @@ nmap -sn 192.168.56.0/24 -oN host_discovery.txt
 nmap 192.168.56.104
 ```
 
----
-
-## Open Ports Found on Metasploitable2 (192.168.56.104)
-
-PORT     STATE SERVICE
-21/tcp   open  ftp
-22/tcp   open  ssh
-23/tcp   open  telnet
-25/tcp   open  smtp
-53/tcp   open  domain
-80/tcp   open  http
-111/tcp  open  rpcbind
-139/tcp  open  netbios-ssn
-445/tcp  open  microsoft-ds
-512/tcp  open  exec
-513/tcp  open  login
-514/tcp  open  shell
-1099/tcp open  rmiregistry
-1524/tcp open  ingreslock
-2049/tcp open  nfs
-2121/tcp open  ccproxy-ftp
-3306/tcp open  mysql
-5432/tcp open  postgresql
-5900/tcp open  vnc
-6000/tcp open  X11
-6667/tcp open  irc
-8009/tcp open  ajp13
-8180/tcp open  unknown
-
-
----
 
 ## Screenshot
 
-### Open Ports Found on Metasploitable2 (192.168.56.104)
+```
+```
+## Open Ports Found on Metasploitable2 (192.168.56.104)
 
 <img width="1005" height="679" alt="image" src="https://github.com/user-attachments/assets/4047079e-5b60-4ef7-bf4b-a4c59ddc3b8a" />
 
-### Open Ports Found on Windows 10 (192.168.56.103)
+
+
+## Open Ports Found on Windows 10 (192.168.56.103)
 
 <img width="1005" height="679" alt="image" src="https://github.com/user-attachments/assets/4d09197b-db75-420a-a547-4febd872e6b1" />
 
 
-### Open Ports Found on kali (192.168.56.102)
+
+## Open Ports Found on kali (192.168.56.102)
+
+<img width="1005" height="679" alt="image" src="https://github.com/user-attachments/assets/5a210404-17d8-4593-8251-7e382937b50c" />
+
 
 ---
 
@@ -187,6 +164,11 @@ iface eth0 inet static
     netmask 255.255.255.0
     gateway 192.168.56.1
 ```
+## Screenshot
+
+<img width="1001" height="679" alt="image" src="https://github.com/user-attachments/assets/1ff34e04-ce54-468f-89a1-cf4c6c770566" />
+
+
 
 ---
 
@@ -208,7 +190,10 @@ ip addr show eth0
 
 ## Screenshot
 
-<!-- Add screenshot of static IP configuration here -->
+<img width="1001" height="679" alt="image" src="https://github.com/user-attachments/assets/cb5dea5f-0f62-4aeb-a6ad-55a13de3963d" />
+
+<img width="1001" height="679" alt="image" src="https://github.com/user-attachments/assets/90688be1-b77d-4a78-b117-6084bf79fc53" />
+
 
 ---
 
