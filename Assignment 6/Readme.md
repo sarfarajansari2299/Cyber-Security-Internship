@@ -22,7 +22,8 @@ ip a
 
 ### Screenshot
 
-<img width="1282" height="910" alt="image" src="https://github.com/user-attachments/assets/07c7a762-ac47-4fcf-8047-d418c0eac2d8" />
+<img width="1010" height="816" alt="image" src="https://github.com/user-attachments/assets/c0e2a89a-c826-4bda-a751-c063d3cbbf1f" />
+
 
 
 ---
@@ -32,20 +33,20 @@ ip a
 #### Command
 
 ```bash
-nmap -sn 10.0.2.0/24
+nmap -sn 10.0.2.3/24
 ```
 
 #### Result
 
 | Host            | IP Address |
 | --------------- | ---------- |
-| Kali Linux      | 10.0.2.15  |
-| Metasploitable2 | 10.0.2.16  |
-| Windows 10      | 10.0.2.17  |
+| Kali Linux      | 10.0.2.3   |
+| Metasploitable2 | 10.0.2.4   |
+| Windows 10      | 10.0.2.15  |
 
 ### Screenshot
 
-<img width="1282" height="910" alt="image" src="https://github.com/user-attachments/assets/f8c8a544-6873-466c-99db-0285a6f0b0e1" />
+<img width="1010" height="816" alt="image" src="https://github.com/user-attachments/assets/cf3a2a39-fa31-4721-bcfa-ea710a0f023d" />
 
 
 ---
@@ -63,14 +64,30 @@ nmap 10.0.2.17
 
 #### Metasploitable2
 
-| Port | Service |
-| ---- | ------- |
-| 21   | FTP     |
-| 22   | SSH     |
-| 23   | Telnet  |
-| 25   | SMTP    |
-| 80   | HTTP    |
-| 445  | SMB     |
+| Port | Service      |
+|------|-------------|
+| 21   | FTP         |
+| 22   | SSH         |
+| 23   | Telnet      |
+| 25   | SMTP        |
+| 53   | Domain (DNS)|
+| 80   | HTTP        |
+| 111  | RPCBind     |
+| 139  | NetBIOS-SSN |
+| 445  | SMB         |
+| 512  | Exec        |
+| 513  | Login       |
+| 514  | Shell       |
+| 1524 | Ingreslock  |
+| 2049 | NFS         |
+| 2121 | CCProxy-FTP |
+| 3306 | MySQL       |
+| 3632 | DistCCD     |
+| 5432 | PostgreSQL  |
+| 5900 | VNC         |
+| 6000 | X11         |
+| 6667 | IRC         |
+| 8009 | AJP13       |
 
 #### Windows 10
 
