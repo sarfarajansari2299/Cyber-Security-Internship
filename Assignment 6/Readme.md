@@ -408,53 +408,37 @@ iface eth0 inet6 static
 
 # d. Test Connectivity Between VMs
 
-## IPv4 Ping Test
+## IPv4 Ping Test windows 10 from Kali
 
 ### Command
 
 ```bash
-ping 192.168.56.102
+ping -c 4 192.168.56.102
 ```
 
 ---
 
-### Output
+# Screenshot
 
-```
-PING 192.168.56.102 (192.168.56.102) 56(84) bytes of data.
-64 bytes from 192.168.56.102: icmp_seq=1 ttl=64 time=0.521 ms
-64 bytes from 192.168.56.102: icmp_seq=2 ttl=64 time=0.412 ms
-64 bytes from 192.168.56.102: icmp_seq=3 ttl=64 time=0.398 ms
+<img width="1267" height="1035" alt="image" src="https://github.com/user-attachments/assets/df97d842-7b8c-4ddd-a66e-235755e79e1d" />
 
---- 192.168.56.102 statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 2055ms
-rtt min/avg/max/stddev = 0.398/0.444/0.521/0.051 ms
-```
 
 ---
 
-## IPv6 Ping Test
+## IPv6 Ping Test Metasploitable2 from Kali
 
 ### Command
 
 ```bash
-ping6 fd00::2
+ping -c 10 192.168.56.102
 ```
 
 ---
 
-### Output
+# Screenshot
 
-```
-PING fd00::2(fd00::2) 56 data bytes
-64 bytes from fd00::2: icmp_seq=1 ttl=64 time=0.623 ms
-64 bytes from fd00::2: icmp_seq=2 ttl=64 time=0.521 ms
-64 bytes from fd00::2: icmp_seq=3 ttl=64 time=0.387 ms
+<img width="1267" height="1035" alt="image" src="https://github.com/user-attachments/assets/fb54f6a2-1bfa-4acc-ade0-c179841a441c" />
 
---- fd00::2 statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 2044ms
-rtt min/avg/max/stddev = 0.387/0.510/0.623/0.095 ms
-```
 
 ---
 
