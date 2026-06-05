@@ -394,13 +394,13 @@ iface eth0 inet6 static
 
 ---
 
-## Screenshot
+# Screenshot
 
-# Static IPv6 Address
+## Static IPv6 Address
 <img width="1267" height="1035" alt="image" src="https://github.com/user-attachments/assets/6fef96f6-1bc7-4aea-8ae2-b745daf25e13" />
 
 
-# Make IPv6 Persistent
+## Make IPv6 Persistent
 
 <img width="1267" height="1035" alt="image" src="https://github.com/user-attachments/assets/c81bd706-e9b5-44b0-a03f-f074db339dff" />
 
