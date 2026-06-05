@@ -48,9 +48,9 @@ nmap -sn 192.168.56.0/24
 
 | Hostname        | IP Address     | Status |
 | --------------- | -------------- | ------ |
-| Kali Linux      | 192.168.56.102 | Up     |
-| Metasploitable2 | 192.168.56.104 | Up     |
-| Windows 10      | 192.168.56.103 | Up     |
+| Kali Linux      | 192.168.56.101 | Up     |
+| Metasploitable2 | 192.168.56.103 | Up     |
+| Windows 10      | 192.168.56.102 | Up     |
 
 ---
 
@@ -231,8 +231,8 @@ ip addr show eth0
 | VM              | Static IP      | Subnet Mask     | Gateway      |
 | --------------- | -------------- | --------------- | ------------ |
 | Kali Linux      | 192.168.56.101 | 255.255.255.0   | 192.168.56.1 |
-| Metasploitable2 | 192.168.56.104 | 255.255.255.0   | 192.168.56.1 |
-| Windows 10      | 192.168.56.103 | 255.255.255.0   | 192.168.56.1 |
+| Metasploitable2 | 192.168.56.103 | 255.255.255.0   | 192.168.56.1 |
+| Windows 10      | 192.168.56.102 | 255.255.255.0   | 192.168.56.1 |
 
 ---
 
@@ -258,30 +258,40 @@ Understand IP subnetting and calculate network parameters.
 ## Tool Used
 
 ```bash
-ipcalc 192.168.56.0/24
+sudo apt update
+sudo apt install sipcalc -y
+sipcalc 192.168.56.0/24
+
 ```
 
 ---
 
 ## ipcalc Command Examples
-
+sipcalc 192.168.56.0/24
 ### Example 1: Calculate /24 Subnet
 
 ```bash
-ipcalc 192.168.56.0/24
+sipcalc 192.168.56.0/24
 ```
 
 **Output:**
 ```
-Address:   192.168.56.0
-Netmask:   255.255.255.0 = 24
-Wildcard:  0.0.0.255
-=>
-Network:   192.168.56.0/24
-HostMin:   192.168.56.1
-HostMax:   192.168.56.254
-Broadcast: 192.168.56.255
-Hosts/Net: 254
+-[ipv4 : 192.168.56.0/24] - 0
+
+[CIDR]
+Host address            - 192.168.56.0
+Host address (decimal)  - 3232249856
+Host address (hex)      - C0A83800
+Network address         - 192.168.56.0
+Network mask            - 255.255.255.0
+Network mask (bits)     - 24
+Network mask (hex)      - FFFFFF00
+Broadcast address       - 192.168.56.255
+Cisco wildcard          - 0.0.0.255
+Addresses in network    - 256
+Network range           - 192.168.56.0 - 192.168.56.255
+Usable range            - 192.168.56.1 - 192.168.56.254
+
 ```
 
 ---
@@ -294,53 +304,68 @@ ipcalc 192.168.56.0/25
 
 **Output:**
 ```
-Address:   192.168.56.0
-Netmask:   255.255.255.128 = 25
-Wildcard:  0.0.0.127
-=>
-Network:   192.168.56.0/25
-HostMin:   192.168.56.1
-HostMax:   192.168.56.126
-Broadcast: 192.168.56.127
-Hosts/Net: 126
+-[ipv4 : 192.168.56.0/25] - 0
+
+[CIDR]
+Host address            - 192.168.56.0
+Host address (decimal)  - 3232249856
+Host address (hex)      - C0A83800
+Network address         - 192.168.56.0
+Network mask            - 255.255.255.128
+Network mask (bits)     - 25
+Network mask (hex)      - FFFFFF80
+Broadcast address       - 192.168.56.127
+Cisco wildcard          - 0.0.0.127
+Addresses in network    - 128
+Network range           - 192.168.56.0 - 192.168.56.127
+Usable range            - 192.168.56.1 - 192.168.56.126
+
 ```
 
 ---
 
-## Subnetting Formulas
-
-```
-Number of Subnets = 2^n (where n = number of borrowed bits)
-Number of Hosts per Subnet = 2^m - 2 (where m = number of host bits)
-Subnet Increment = 256 - Subnet Mask's Last Octet
-```
 
 ---
 
 ## Screenshot
 
-<img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/ipcalc-output" />
+<img width="1267" height="1035" alt="image" src="https://github.com/user-attachments/assets/82ad2011-97a9-4818-8b7a-dce21f155b38" />
+
 
 ---
 
 # c. Set Up IPv6 Address on Kali Linux
 
-## Command to Add IPv6 Address
+## Command to View Current IPv6 Addresses
 
 ```bash
-sudo ip -6 addr add fd00::1/64 dev eth0
+ip -6 addr
 ```
 
 > `fd00::1/64` is a unique local address (ULA) in IPv6 format.
 
 ---
 
-## Verify IPv6 Assignment
+## Add a Static IPv6 Address
 
 ```bash
-ip -6 addr show eth0
+sudo ip -6 addr add fd00::1/64 dev eth1
 ```
 
+---
+
+## Verify IPv6 Configuration
+
+```bash
+ip -6 addr show eth1
+```
+# Output
+
+```bash
+ inet6 fd00::1/64 scope global 
+       valid_lft forever preferred_lft forever
+
+```
 ---
 
 ## IPv6 Configuration
@@ -367,7 +392,8 @@ iface eth0 inet6 static
 
 ## Screenshot
 
-<img width="957" height="1017" alt="image" src="https://github.com/user-attachments/assets/ipv6-assignment" />
+<img width="1267" height="1035" alt="image" src="https://github.com/user-attachments/assets/6fef96f6-1bc7-4aea-8ae2-b745daf25e13" />
+
 
 ---
 
