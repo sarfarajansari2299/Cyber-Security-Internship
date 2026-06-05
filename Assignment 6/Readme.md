@@ -220,6 +220,10 @@ ip addr show eth0
 
 <img width="1001" height="679" alt="image" src="https://github.com/user-attachments/assets/90688be1-b77d-4a78-b117-6084bf79fc53" />
 
+<img width="1026" height="853" alt="image" src="https://github.com/user-attachments/assets/88735b8e-18fe-46e7-ab6d-8f35c65589ec" />
+
+<img width="782" height="715" alt="image" src="https://github.com/user-attachments/assets/4bc721cb-9705-45d3-97bb-7b619c9e9835" />
+
 ---
 
 ## Static IP Assignment Summary
