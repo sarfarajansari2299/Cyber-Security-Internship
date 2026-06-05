@@ -267,7 +267,11 @@ sipcalc 192.168.56.0/24
 ---
 
 ## ipcalc Command Examples
+```bash
 sipcalc 192.168.56.0/24
+```
+---
+
 ### Example 1: Calculate /24 Subnet
 
 ```bash
@@ -370,11 +374,11 @@ ip -6 addr show eth1
 
 ## IPv6 Configuration
 
-| VM          | IPv6 Address | Prefix Length | Address Type |
-| ----------- | ------------ | ------------- | ------------ |
-| Kali Linux  | fd00::1      | 64            | ULA          |
-| Metasploitable2 | fd00::2  | 64            | ULA          |
-| Windows 10  | fd00::3      | 64            | ULA          |
+| VM              | IPv6 Address | Prefix Length  | Address Type |
+| --------------- | ------------ | ---------------| ------------ |
+| Kali Linux      | fd00::1      | 64             | ULA          |
+| Metasploitable2 |Not Configured| N/A            | N/A          |
+| Windows 10      |Not Configured| N/A            | N/A          |
 
 ---
 
@@ -392,8 +396,13 @@ iface eth0 inet6 static
 
 ## Screenshot
 
+# Static IPv6 Address
 <img width="1267" height="1035" alt="image" src="https://github.com/user-attachments/assets/6fef96f6-1bc7-4aea-8ae2-b745daf25e13" />
 
+
+# Make IPv6 Persistent
+
+<img width="1267" height="1035" alt="image" src="https://github.com/user-attachments/assets/c81bd706-e9b5-44b0-a03f-f074db339dff" />
 
 ---
 
