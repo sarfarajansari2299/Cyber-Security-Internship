@@ -463,7 +463,7 @@ traceroute to 192.168.56.102 (192.168.56.102), 30 hops max, 60 byte packets
 
 ## Screenshot
 
-<img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/connectivity-test" />
+<img width="1267" height="1035" alt="image" src="https://github.com/user-attachments/assets/d7c6c396-3137-434c-b7c6-e693840171fa" />
 
 ---
 
@@ -525,7 +525,8 @@ ssh cyberuser@192.168.56.102
 
 ## Screenshot
 
-<img width="1400" height="900" alt="image" src="https://github.com/user-attachments/assets/wireshark-capture" />
+<img width="1267" height="1035" alt="image" src="https://github.com/user-attachments/assets/712c95e9-8def-4d62-8c89-49b24a8de7c6" />
+
 
 ---
 
