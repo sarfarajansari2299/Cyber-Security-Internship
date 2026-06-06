@@ -570,18 +570,25 @@ ICMP Header:
 ```
 Ethernet Header:
   Destination MAC: ff:ff:ff:ff:ff:ff (broadcast)
-  Source MAC: 08:00:27:xx:xx:xx
+  Source MAC: 08:00:27:2d:95:11
 ARP Header:
   Hardware Type: Ethernet (1)
   Protocol Type: IPv4 (0x0800)
   Hardware Size: 6 bytes
   Protocol Size: 4 bytes
-  Opcode: 1 (Request) / 2 (Reply)
-  Sender MAC: 08:00:27:xx:xx:xx
-  Sender IP: 192.168.56.101
+  Opcode: 1 (Request)
+  Sender MAC: 08:00:27:2d:95:11
+  Sender IP: 192.168.56.100
   Target MAC: 00:00:00:00:00:00
   Target IP: 192.168.56.102
 ```
+
+---
+## Screenshot
+
+
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/fd09335c-611e-491e-9e39-d94203d51038" />
+
 
 ---
 
@@ -594,21 +601,27 @@ ARP Header:
 **Packet Structure:**
 ```
 IP Header:
-  Source IP: 192.168.56.101
-  Destination IP: 192.168.56.102
+  Source IP: 192.168.56.103
+  Destination IP: 192.168.56.101
   Protocol: TCP (6)
 TCP Header:
-  Source Port: 54321
-  Destination Port: 22 (SSH)
-  Sequence Number: 1000000
-  Acknowledgment Number: 2000000
-  Flags: SYN, ACK, FIN, RST, PSH, URG
-  Window Size: 65535
-  Checksum: Valid
+  Source Port: 22
+  Destination Port: 36700
+  Sequence Number: 0
+  Acknowledgment Number (raw): 893520934
+  Flags: SYN, ACK
+  Window Size: 5792
+  Checksum: unverified
 ```
 
 ---
+## Screenshot
 
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/68a18092-679c-42e2-a2de-83c9a9f68e76" />
+
+
+
+---
 ### Protocol 4: UDP (User Datagram Protocol)
 
 **Layer:** Transport (Layer 4)  
@@ -717,28 +730,68 @@ FTP Command:
 
 ---
 
+
 ### Protocol 9: DHCP (Dynamic Host Configuration Protocol)
 
-**Layer:** Application (Layer 7)  
-**Port:** 67 (Server), 68 (Client)  
-**Purpose:** Dynamic IP address assignment
+**Layer:** Application Layer (Layer 7)
+**Transport Protocol:** UDP
+**Port:** 67 (Server), 68 (Client)
+**Purpose:** Dynamic IP address assignment and network configuration management.
 
-**Packet Structure:**
+#### Packet Structure
+
+##### IPv4 Header
+
+```text
+Source IP Address:      192.168.56.101
+Destination IP Address: 192.168.56.100
+Protocol: UDP (17)
+TTL: 64
 ```
-UDP Header:
-  Source Port: 68
-  Destination Port: 67
-DHCP Header:
-  Op: 1 (Request) / 2 (Reply)
-  Htype: 1 (Ethernet)
-  Hlen: 6
-  Xid: 0x12345678
-  Ciaddr: 0.0.0.0
-  Yiaddr: 192.168.56.101
-  Server Identifier: 192.168.56.1
-  Requested IP: 192.168.56.101
-  Lease Time: 3600 seconds
+
+##### UDP Header
+
+```text
+Source Port:      68
+Destination Port: 67
+Length:           290
+Checksum:         0xf34d [Unverified]
 ```
+
+##### DHCP Header
+
+```text
+Message Type:             Boot Request (1)
+Hardware Type:            Ethernet (0x01)
+Hardware Address Length:  6
+Hops:                     0
+Transaction ID:           0xc7697cbc
+Seconds Elapsed:          1
+Bootp Flags:              0x0000 (Unicast)
+
+Client IP Address:        192.168.56.101
+Your Client IP Address:   0.0.0.0
+Next Server IP Address:   0.0.0.0
+Relay Agent IP Address:   0.0.0.0
+
+Client MAC Address:       08:00:27:fb:93:62
+```
+
+##### DHCP Options
+
+```text
+Option 53: DHCP Message Type (Request)
+Option 61: Client Identifier
+Option 55: Parameter Request List
+Option 57: Maximum DHCP Message Size
+Option 12: Host Name
+Option 255: End
+
+```
+
+## Screenshot
+
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/89d5094d-8e82-4054-9908-6ca24f36d0da" />
 
 ---
 
