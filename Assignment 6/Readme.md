@@ -442,29 +442,6 @@ ping -c 10 192.168.56.102
 
 ---
 
-## Traceroute Test
-
-### Command
-
-```bash
-traceroute 192.168.56.102
-```
-
----
-
-### Output
-
-```
-traceroute to 192.168.56.102 (192.168.56.102), 30 hops max, 60 byte packets
- 1  192.168.56.102 (192.168.56.102)  0.521 ms  0.412 ms  0.398 ms
-```
-
----
-
-## Screenshot
-
-<img width="1267" height="1035" alt="image" src="https://github.com/user-attachments/assets/d7c6c396-3137-434c-b7c6-e693840171fa" />
-
 ---
 
 ## Observation
