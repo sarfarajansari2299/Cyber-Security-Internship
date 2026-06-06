@@ -524,7 +524,7 @@ ssh cyberuser@192.168.56.102
 | 9 | DHCP     | Application | Dynamic Host Configuration Protocol (IP leasing) | `bootp`               |
 | 10| NBNS     | Application | NetBIOS Name Service (Windows name resolution)   | `nbns`                |
 
----
+---ka
 
 ## Protocol Details
 
@@ -537,22 +537,29 @@ ssh cyberuser@192.168.56.102
 **Packet Structure:**
 ```
 Ethernet Header:
-  Destination MAC: 08:00:27:xx:xx:xx
-  Source MAC: 08:00:27:xx:xx:xx
+  Destination MAC: 08:00:27:fb:93:62
+  Source MAC: 08:00:27:e1:5b:b1
 IP Header:
-  Source IP: 192.168.56.101
-  Destination IP: 192.168.56.102
+  Source IP: 192.168.56.102
+  Destination IP: 192.168.56.101
   Protocol: ICMP (1)
 ICMP Header:
   Type: 8 (Echo Request) / 0 (Echo Reply)
   Code: 0
-  Checksum: Valid
-  Identifier: 1234
-  Sequence Number: 1
+  Checksum: Good
+  Identifier (BE): 11360
+  Identifier (LE) : 24620
+  Sequence Number (BE): 1
+  Sequence Number (LE): 256
 ```
 
 ---
 
+
+## Screenshot
+<img width="1277" height="1030" alt="image" src="https://github.com/user-attachments/assets/27dc6e9d-d784-42f5-a384-1deac1142dd8" />
+
+---
 ### Protocol 2: ARP (Address Resolution Protocol)
 
 **Layer:** Data Link (Layer 2)  
