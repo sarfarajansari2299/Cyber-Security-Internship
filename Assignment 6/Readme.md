@@ -625,36 +625,6 @@ TCP Header:
 
 ---
 
-### Protocol 5: DNS (Domain Name System)
-
-**Layer:** Application (Layer 7)  
-**Port:** 53 (UDP/TCP)  
-**Purpose:** Hostname to IP address resolution
-
-**Packet Structure:**
-```
-UDP Header:
-  Source Port: 54321
-  Destination Port: 53
-DNS Header:
-  Transaction ID: 0x1234
-  Flags: Query/Response
-  Questions: 1
-  Answer RRs: 0
-  Authority RRs: 0
-  Additional RRs: 0
-Query Section:
-  Name: google.com
-  Type: A (IPv4 Address)
-  Class: IN (Internet)
-```
-
-
-
----
-
-
-
 ### Protocol 9: DHCP (Dynamic Host Configuration Protocol)
 
 **Layer:** Application Layer (Layer 7)
@@ -796,7 +766,8 @@ nmap -p 21,22,23,25,53,80,443,3389,445 192.168.56.102
 
 ## Screenshot
 
-<img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/port-scan" />
+<img width="1023" height="832" alt="image" src="https://github.com/user-attachments/assets/b6fafa40-6e29-4012-a743-3420c5e4dd93" />
+
 
 ---
 
