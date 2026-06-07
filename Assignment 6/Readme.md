@@ -624,26 +624,6 @@ TCP Header:
 
 
 ---
-### Protocol 4: UDP (User Datagram Protocol)
-
-**Layer:** Transport (Layer 4)  
-**Port:** Variable  
-**Purpose:** Connectionless, fast data transmission
-
-**Packet Structure:**
-```
-IP Header:
-  Source IP: 192.168.56.101
-  Destination IP: 192.168.56.102
-  Protocol: UDP (17)
-UDP Header:
-  Source Port: 53 (DNS)
-  Destination Port: 53
-  Length: 64 bytes
-  Checksum: Valid
-```
-
----
 
 ### Protocol 5: DNS (Domain Name System)
 
@@ -669,68 +649,10 @@ Query Section:
   Class: IN (Internet)
 ```
 
----
 
-### Protocol 6: HTTP (Hypertext Transfer Protocol)
-
-**Layer:** Application (Layer 7)  
-**Port:** 80 (TCP)  
-**Purpose:** Web page retrieval
-
-**Packet Structure:**
-```
-TCP Header:
-  Source Port: 54321
-  Destination Port: 80
-HTTP Header:
-  Method: GET
-  URI: /index.html
-  Version: HTTP/1.1
-  Host: example.com
-  User-Agent: curl/7.64.1
-  Accept: */*
-```
 
 ---
 
-### Protocol 7: SSH (Secure Shell)
-
-**Layer:** Application (Layer 7)  
-**Port:** 22 (TCP)  
-**Purpose:** Secure remote shell access
-
-**Packet Structure:**
-```
-TCP Header:
-  Source Port: 54321
-  Destination Port: 22
-SSH Protocol Version: SSH-2.0-OpenSSH_7.4
-Encryption: Algorithms negotiated
-Authentication: Username/Password or Key-based
-Data: Encrypted
-```
-
----
-
-### Protocol 8: FTP (File Transfer Protocol)
-
-**Layer:** Application (Layer 7)  
-**Port:** 21 (Command), 20 (Data)  
-**Purpose:** File transfer
-
-**Packet Structure:**
-```
-TCP Header:
-  Source Port: 54321
-  Destination Port: 21
-FTP Command:
-  Command: USER username
-  Response: 331 Password required
-  Command: PASS password
-  Response: 230 Login successful
-```
-
----
 
 
 ### Protocol 9: DHCP (Dynamic Host Configuration Protocol)
@@ -797,266 +719,36 @@ Option 255: End
 
 ---
 
-### Protocol 10: NBNS (NetBIOS Name Service)
-
-**Layer:** Application (Layer 7)  
-**Port:** 137 (UDP)  
-**Purpose:** Windows hostname resolution
-
-**Packet Structure:**
-```
-UDP Header:
-  Source Port: 137
-  Destination Port: 137
-NBNS Header:
-  Transaction ID: 0x5678
-  Flags: Query/Response
-  Questions: 1
-  Answer RRs: 0
-Query:
-  Name: WORKSTATION
-  Type: NB (NetBIOS General Name Service)
-  Class: IN (Internet)
-```
-
----
-
 # c. Analyze Packet Headers and Payloads
 
-## ICMP Packet Analysis (Ping Request)
+## DHCP Packet Analysis
 
 ```
-Frame: 64 bytes
 Ethernet Header:
-  Destination MAC: 08:00:27:aa:bb:cc
-  Source MAC: 08:00:27:dd:ee:ff
-  EtherType: 0x0800 (IPv4)
+  Source MAC: 08:00:27:2d:95:11
+  Destination MAC: 08:00:27:fb:93:62
 
 IP Header:
-  Version: 4
-  Header Length: 20 bytes
-  DSCP: 0 (Default)
-  Total Length: 60 bytes
-  Identification: 0x5678
-  Flags: Don't Fragment (DF)
-  TTL: 64
-  Protocol: ICMP (1)
-  Header Checksum: Valid
-  Source IP: 192.168.56.101
-  Destination IP: 192.168.56.102
-
-ICMP Header:
-  Type: 8 (Echo Request)
-  Code: 0
-  Checksum: Valid (0x1234)
-  Identifier: 0x0001
-  Sequence: 0x0001
-
-ICMP Payload:
-  Data (56 bytes): abcdefghijklmnopqrstuvwxyz...
-```
-
----
-
-## TCP 3-Way Handshake Analysis (SSH Connection)
-
-### Packet 1: SYN
-
-```
-TCP Header:
-  Source Port: 54321
-  Destination Port: 22
-  Sequence Number: 1000000
-  Acknowledgment Number: 0
-  Flags: SYN
-  Window Size: 65535
-  Checksum: Valid
-  Options: MSS=1460, SACK_PERM, TS_VAL=...
-```
-
-### Packet 2: SYN-ACK
-
-```
-TCP Header:
-  Source Port: 22
-  Destination Port: 54321
-  Sequence Number: 2000000
-  Acknowledgment Number: 1000001
-  Flags: SYN, ACK
-  Window Size: 32768
-  Checksum: Valid
-  Options: MSS=1460, SACK_PERM, TS_VAL=...
-```
-
-### Packet 3: ACK
-
-```
-TCP Header:
-  Source Port: 54321
-  Destination Port: 22
-  Sequence Number: 1000001
-  Acknowledgment Number: 2000001
-  Flags: ACK
-  Window Size: 65535
-  Checksum: Valid
-```
-
----
-
-## DNS Query Analysis
-
-```
-Frame: 72 bytes
-Ethernet Header:
-  Destination MAC: 08:00:27:aa:bb:cc
-  Source MAC: 08:00:27:dd:ee:ff
-
-IP Header:
-  Version: 4
-  Total Length: 58 bytes
-  Source IP: 192.168.56.101
-  Destination IP: 8.8.8.8 (Google DNS)
+  Source IP: 192.168.56.100
+  Destination IP: 192.168.56.101
   Protocol: UDP (17)
+  TTL: 64
 
 UDP Header:
-  Source Port: 54321
-  Destination Port: 53
-  Length: 38 bytes
-  Checksum: Valid
+  Source Port: 67
+  Destination Port: 68
+  Length: 556
 
-DNS Header:
-  Transaction ID: 0x1234
-  Flags: 0x0100 (Standard Query)
-  Questions: 1
-  Answer RRs: 0
-  Authority RRs: 0
-  Additional RRs: 0
-
-Query Section:
-  Name: google.com (length-encoded)
-  Type: 1 (A - IPv4 Address)
-  Class: 1 (IN - Internet)
+DHCP Header:
+  Message Type: Boot Request (2)
+  Hardware Type: Ethernet
+  Hardware Address Length: 6
+  Transaction ID: 0xc7697cbc
+  Client IP Address: 192.168.56.101
 ```
+# Screenshot 
 
----
-
-## Screenshot
-
-<img width="1400" height="900" alt="image" src="https://github.com/user-attachments/assets/packet-analysis" />
-
----
-
-# d. Filter Traffic by Protocol Type
-
-## Wireshark Display Filters
-
-### Filter by Single Protocol
-
-```text
-# ICMP traffic
-icmp
-
-# ARP traffic
-arp
-
-# TCP traffic
-tcp
-
-# UDP traffic
-udp
-
-# DNS traffic
-dns
-
-# HTTP traffic
-http
-
-# SSH traffic
-tcp.port == 22
-
-# FTP traffic
-ftp
-
-# DHCP traffic
-bootp
-
-# NetBIOS traffic
-nbns
-```
-
----
-
-### Combine Filters with Boolean Operators
-
-```text
-# TCP or UDP traffic
-tcp || udp
-
-# All traffic except ICMP
-!icmp
-
-# HTTP and DNS traffic
-http || dns
-
-# Traffic to specific IP
-ip.dst == 192.168.56.102
-
-# Traffic from specific IP
-ip.src == 192.168.56.101
-
-# TCP traffic on port 22
-tcp.port == 22
-
-# UDP traffic on port 53
-udp.port == 53
-
-# Traffic between two hosts
-(ip.src == 192.168.56.101) && (ip.dst == 192.168.56.102)
-```
-
----
-
-## Capture Traffic via CLI (tcpdump)
-
-### Basic Capture
-
-```bash
-sudo tcpdump -i eth0 -w capture.pcap
-```
-
-> `-i eth0` specifies interface, `-w capture.pcap` saves to file
-
----
-
-### Capture Specific Protocol
-
-```bash
-# Capture only ICMP
-sudo tcpdump -i eth0 icmp -w icmp_capture.pcap
-
-# Capture only DNS
-sudo tcpdump -i eth0 port 53 -w dns_capture.pcap
-
-# Capture only SSH
-sudo tcpdump -i eth0 port 22 -w ssh_capture.pcap
-
-# Capture with packet content
-sudo tcpdump -i eth0 -w capture.pcap -X
-```
-
----
-
-### Open Capture in Wireshark
-
-```bash
-wireshark capture.pcap &
-```
-
----
-
-## Screenshot
-
-<img width="1400" height="900" alt="image" src="https://github.com/user-attachments/assets/filtered-traffic" />
+<img width="1277" height="1022" alt="image" src="https://github.com/user-attachments/assets/6de21ed1-7e9d-412d-96e2-bca5fbc3c676" />
 
 ---
 
