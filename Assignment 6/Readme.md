@@ -785,7 +785,8 @@ nmap -sV -p 21,22,23,25,53,80,443,3389,445 192.168.56.102
 
 ## Screenshot
 
-<img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/service-detection" />
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/19a31e1f-6749-41c7-946f-bd2149cf3f3a" />
+
 
 ---
 
@@ -794,38 +795,19 @@ nmap -sV -p 21,22,23,25,53,80,443,3389,445 192.168.56.102
 ## Command
 
 ```bash
-nmap -sV 192.168.56.102
-```
-
----
-
-## Output
-
-```
-PORT     STATE  SERVICE     VERSION
-21/tcp   open   ftp         vsftpd 2.3.4
-22/tcp   open   ssh         OpenSSH 4.7p1 Debian 8+etch3
-23/tcp   open   telnet      Linux telnetd
-25/tcp   open   smtp        Postfix smtpd
-53/tcp   open   domain      ISC BIND 9.3.4
-80/tcp   open   http        Apache httpd 2.2.8
-139/tcp  open   netbios-ssn Samba smbd 3.0.20
-445/tcp  open   microsoft-ds Samba smbd 3.0.20
-3306/tcp open   mysql       MySQL 5.0.51a-3+lenny5
-5432/tcp open   postgresql  PostgreSQL 8.3.0 on i686-pc-linux-gnu
-8180/tcp open   http        Apache Tomcat/Coyote JSP engine 1.1
-MAC Address: 08:00:27:AA:BB:CC (Oracle VirtualBox virtual NIC)
+nmap -sV 192.168.56.103 (Kali -> Metasploitable 2)
 ```
 
 ---
 
 ## Screenshot
 
-<img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/full-service-detection" />
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/688dfb27-908c-458c-87ee-32aa143735ec" />
+
 
 ---
 
-# d. 20 Common Port Numbers Reference
+# d. Research and document 20 common port numbers
 
 ## Common Ports Detailed Table
 
@@ -1001,56 +983,6 @@ These are temporarily assigned to processes.
 
 ---
 
-## Nmap Scanning Techniques
-
-### Scan Specific Port Range
-
-```bash
-nmap -p 1-1000 192.168.56.102
-```
-
----
-
-### Scan All Ports
-
-```bash
-nmap -p- 192.168.56.102
-```
-
----
-
-### Scan with Version Detection
-
-```bash
-nmap -sV 192.168.56.102
-```
-
----
-
-### Aggressive Scan
-
-```bash
-nmap -A 192.168.56.102
-```
-
-> `-A` enables OS detection, version detection, script scanning, and traceroute.
-
----
-
-### Save Output
-
-```bash
-nmap -p- 192.168.56.102 -oN scan_results.txt
-```
-
----
-
-## Screenshot
-
-<img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/port-reference" />
-
----
-
 ## Observation
 
 Nmap's service detection (`-sV`) accurately identified the software versions running on open ports. This information is critical for identifying potentially vulnerable services during penetration testing. Port scanning revealed Metasploitable2 as a deliberately vulnerable system with many exposed services, while Windows 10 and Kali Linux had more restricted port configurations.
@@ -1112,15 +1044,6 @@ This hands-on lab improved practical understanding of network reconnaissance, IP
 
 ---
 
-# References
-
-* Nmap Official Documentation: https://nmap.org/
-* Wireshark Official Documentation: https://www.wireshark.org/
-* RFC 791 - Internet Protocol (IPv4): https://tools.ietf.org/html/rfc791
-* RFC 2460 - Internet Protocol, Version 6 (IPv6): https://tools.ietf.org/html/rfc2460
-* Common Ports List: https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
-
----
 
 # Author
 
