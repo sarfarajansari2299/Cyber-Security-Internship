@@ -56,6 +56,7 @@ Wireshark successfully captured real-time network traffic from the selected inte
 ### Commands Used
 
 ```bash
+
 curl http://example.com
 curl http://www.google.com
 curl http://httpbin.org/get
@@ -64,10 +65,12 @@ for i in {1..5}; do
   curl http://example.com
 done
 ```
-
+---
 ### Screenshot
 
 ![HTTP Traffic](images/http-traffic-capture.png)
+
+---
 
 ### HTTP Traffic Summary
 
@@ -76,6 +79,8 @@ done
 | 1 | GET | example.com | /index.html | 200 OK |
 | 2 | GET | google.com | / | 200 OK |
 | 3 | GET | httpbin.org | /get | 200 OK |
+
+---
 
 ### Observation
 
@@ -97,9 +102,13 @@ dig @8.8.8.8 example.com
 dig +short github.com
 ```
 
+---
+
 ### Screenshot
 
 ![DNS Traffic](images/dns-traffic-capture.png)
+
+---
 
 ### DNS Summary
 
@@ -108,6 +117,8 @@ dig +short github.com
 | 1 | google.com | A | 142.250.185.46 |
 | 2 | example.com | A | 93.184.216.34 |
 | 3 | github.com | A | 140.82.113.4 |
+
+---
 
 ### Observation
 
