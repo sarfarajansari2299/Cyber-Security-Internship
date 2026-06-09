@@ -68,7 +68,9 @@ done
 ---
 ### Screenshot
 
-![HTTP Traffic](images/http-traffic-capture.png)
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/2e35dc39-7090-4ed3-a4a8-6b8784b617c0" />
+
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/c55da49a-f0b2-4624-a2fc-b0248e315ef3" />
 
 ---
 
@@ -76,9 +78,9 @@ done
 
 | Request | Method | Host | Path | Status |
 |----------|----------|----------|----------|----------|
-| 1 | GET | example.com | /index.html | 200 OK |
+| 1 | GET | example.com | /bbbbb | 200 OK |
 | 2 | GET | google.com | / | 200 OK |
-| 3 | GET | httpbin.org | /get | 200 OK |
+| 3 | GET | httpbin.org | /get | 503 service unavailable |
 
 ---
 
