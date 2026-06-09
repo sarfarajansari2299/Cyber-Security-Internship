@@ -108,17 +108,19 @@ dig +short github.com
 
 ### Screenshot
 
-![DNS Traffic](images/dns-traffic-capture.png)
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/3ffe0f20-59ac-4a86-ae65-845c06cf9b87" />
+
 
 ---
 
 ### DNS Summary
 
-| Query | Domain | Type | Response |
-|---------|---------|---------|---------|
-| 1 | google.com | A | 142.250.185.46 |
-| 2 | example.com | A | 93.184.216.34 |
-| 3 | github.com | A | 140.82.113.4 |
+| Query | Domain      | Type | Response                |
+| ----- | ----------- | ---- | ----------------------- |
+| 1     | google.com  | A    | 142.251.220.46          |
+| 2     | example.com | A    | 104.20.23.154           |
+| 3     | github.com  | A    | 20.207.73.82            |
+
 
 ---
 
@@ -140,15 +142,16 @@ ping -c 5 example.com
 
 ### Screenshot
 
-![ICMP Capture](images/icmp-ping-capture.png)
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/8965956a-9146-486d-b821-cfab74a3c838" />
+
 
 ### Ping Summary
 
 | Host | Sent | Received | Loss |
 |---------|---------|---------|---------|
-| 192.168.56.102 | 5 | 5 | 0% |
-| google.com | 5 | 5 | 0% |
-| example.com | 5 | 5 | 0% |
+| 192.168.56.102 | 50 | 50 | 0% |
+| google.com | 10 | 10 | 0% |
+| example.com | 10 | 10 | 0% |
 
 ### Observation
 
@@ -161,8 +164,13 @@ ICMP Echo Request and Echo Reply packets are used to measure connectivity and la
 ### SSH Command
 
 ```bash
-ssh cyberuser@192.168.56.102
+ssh msfadmin@192.168.56.103
 ```
+
+
+
+
+
 
 ### Telnet Command
 
