@@ -188,12 +188,23 @@ telnet 192.168.56.102 23
 
 ### SSH vs Telnet
 
-| Feature | SSH | Telnet |
-|----------|----------|----------|
-| Port | 22 | 23 |
-| Encryption | Yes | No |
-| Security | High | Low |
-| Credentials | Protected | Plaintext |
+| Feature            | SSH                                         | Telnet                                     |
+| ------------------ | ------------------------------------------- | ------------------------------------------ |
+| Port               | 22                                          | 23                                         |
+| Encryption         | Yes (Encrypted)                             | No (Unencrypted)                           |
+| Security           | High                                        | Low                                        |
+| Credentials        | Protected and encrypted during transmission | Sent in plaintext                          |
+| Authentication     | Password or Public Key                      | Username and Password                      |
+| Data Protection    | Entire session encrypted                    | Entire session visible to attackers        |
+| Recommended Usage  | Secure remote administration                | Legacy protocol, generally not recommended |
+| Vulnerability Risk | Low when properly configured                | High due to lack of encryption             |
+| Protocol Type      | Secure Shell (SSH)                          | Telnet Protocol                            |
+| Industry Usage     | Widely used today                           | Mostly obsolete                            |
+
+#### Observation
+
+SSH provides secure remote access by encrypting all communication, including usernames, passwords, and commands. Telnet transmits data in plaintext, making it vulnerable to eavesdropping and credential theft. For this reason, SSH has largely replaced Telnet in modern network administration environments.
+
 
 ### Observation
 
