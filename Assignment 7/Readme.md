@@ -180,7 +180,11 @@ telnet 192.168.56.102 23
 
 ### Screenshot
 
-![SSH Telnet Capture](images/ssh-telnet-capture.png)
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/90baff31-1cd6-4d29-abb2-b1807311c2cc" />
+
+
+<img width="811" height="330" alt="image" src="https://github.com/user-attachments/assets/0a38a807-818b-4a48-9d12-2cd1b742f93f" />
+
 
 ### SSH vs Telnet
 
