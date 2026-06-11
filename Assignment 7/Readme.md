@@ -224,7 +224,8 @@ SSH encrypts all communications while Telnet exposes credentials and commands in
 
 ### Screenshot
 
-![TCP Stream](images/tcp-stream-follow.png)
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/5bba368f-d06b-43b9-a462-e7d5f02dc0d8" />
+
 
 ### Observation
 
@@ -246,7 +247,12 @@ ACK  ----------------->
 
 ### Screenshot
 
-![TCP Handshake](images/tcp-handshake-analysis.png)
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/a4515901-123f-4939-9be6-a35ac8fe3c9b" />
+
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/344ef64e-a21c-4955-af76-0866c215cb39" />
+
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/f4d782ae-d1cc-45de-b843-6022c7755894" />
+
 
 ### Handshake Summary
 
@@ -281,16 +287,23 @@ username=user&password=password
 
 ### Screenshot
 
-![GET POST Analysis](images/http-get-post-analysis.png)
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/90d4bf54-2b0a-440c-b3ab-c9a97ea5c28f" />
+
+
 
 ### GET vs POST
 
-| Feature | GET | POST |
-|----------|----------|----------|
-| Data Location | URL | Request Body |
-| Visibility | Visible | Hidden |
-| Size Limit | Limited | Large |
-| Use Case | Retrieval | Submission |
+| Feature       | GET                                          | POST                                               |
+| ------------- | -------------------------------------------- | -------------------------------------------------- |
+| Data Location | URL (Query Parameters)                       | Request Body                                       |
+| Visibility    | Visible in URL and browser history           | Hidden from URL                                    |
+| Size Limit    | Limited by URL length                        | Supports larger amounts of data                    |
+| Use Case      | Data retrieval, searching, viewing web pages | Form submission, login, file uploads, data updates |
+| Caching       | Can be cached by browsers                    | Usually not cached                                 |
+| Bookmarkable  | Yes                                          | No                                                 |
+| Security      | Less secure for sensitive data               | More secure than GET (when used with HTTPS)        |
+| Example       | `GET /search?q=network+security`             | `POST /api/login`                                  |
+
 
 ### Observation
 
@@ -308,7 +321,7 @@ POST requests are preferable for transmitting sensitive information.
 
 ### Screenshot
 
-![File Export](images/file-export-wireshark.png)
+/home/kali/Desktop/%2f
 
 ### Extracted Files
 
