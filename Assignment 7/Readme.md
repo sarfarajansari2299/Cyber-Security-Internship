@@ -77,10 +77,10 @@ done
 ### HTTP Traffic Summary
 
 | Request | Method | Host | Path | Status |
-|----------|----------|----------|----------|----------|
-| 1 | GET | example.com | /bbbbb | 200 OK |
-| 2 | GET | google.com | / | 200 OK |
-| 3 | GET | httpbin.org | /get | 503 service unavailable |
+|----------|----------|-------------|----------|-------------------------|
+| 1        | GET      | example.com | /bbbbb   | 200 OK                  |
+| 2        | GET      | google.com  | /        | 200 OK                  |
+| 3        | GET      | httpbin.org | /get     | 503 service unavailable |
 
 ---
 
