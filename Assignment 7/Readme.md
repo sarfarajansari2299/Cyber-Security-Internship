@@ -327,12 +327,7 @@ POST requests are preferable for transmitting sensitive information.
 
 ---
 
-| File | Type | Size |
-|---------|---------|---------|
-| logo.png | PNG | 12 KB |
-| style.css | CSS | 25 KB |
-| script.js | JavaScript | 45 KB |
-| document.pdf | PDF | 2.1 MB |
+
 
 ### Observation
 
