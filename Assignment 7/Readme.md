@@ -321,9 +321,11 @@ POST requests are preferable for transmitting sensitive information.
 
 ### Screenshot
 
-/home/kali/Desktop/%2f
 
-### Extracted Files
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/032f838c-5ef4-46bd-885f-69405f0d1520" />
+
+
+---
 
 | File | Type | Size |
 |---------|---------|---------|
