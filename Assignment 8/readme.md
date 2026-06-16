@@ -1,4 +1,4 @@
-# ASSIGNMENT 3: WINDOWS LOGIN BYPASS TECHNIQUES
+# ASSIGNMENT 8 : WINDOWS LOGIN BYPASS TECHNIQUES
 
 ## Objective
 
@@ -29,9 +29,8 @@ Sticky Keys is an accessibility feature that assists users who have difficulty p
 
 ## Screenshot
 
-```
-Insert Screenshot Here
-```
+<img width="1047" height="872" alt="image" src="https://github.com/user-attachments/assets/9f152a7a-8278-45d0-be38-5948ca6c3a07" />
+
 
 ---
 
@@ -63,9 +62,10 @@ Windows stores local account information within the Security Account Manager (SA
 
 ## Screenshot
 
-```
-Insert Screenshot Here
-```
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/83ad177a-5d66-42a5-a3df-3be767645bd4" />
+
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/c0004ca2-9ff7-4a56-a36f-3116e75c8afc" />
+
 
 ---
 
@@ -103,9 +103,9 @@ Examples include:
 
 ## Screenshot
 
-```
-Insert Screenshot Here
-```
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/87818e69-b30b-433c-89a2-217cf56a03cc" />
+
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/262a45c8-2f2b-44de-b219-b01dd4def9e5" />
 
 ---
 
