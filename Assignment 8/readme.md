@@ -141,9 +141,10 @@ Ophcrack demonstrates password recovery techniques using rainbow tables.
 
 ## Screenshot
 
-```
-Insert Screenshot Here
-```
+<img width="1271" height="890" alt="image" src="https://github.com/user-attachments/assets/b65f6a46-7e8e-496a-8f39-787105b81ef5" />
+
+<img width="1027" height="876" alt="image" src="https://github.com/user-attachments/assets/ed1fb3d5-0a26-41b8-b581-92026c8591f6" />
+
 
 ---
 
