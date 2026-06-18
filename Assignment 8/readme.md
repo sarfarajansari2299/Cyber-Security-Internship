@@ -175,9 +175,8 @@ Practice safe testing procedures using virtual machine snapshots.
 
 ## Screenshot
 
-```
-Insert Screenshot Here
-```
+<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/44f893c2-7c73-412b-b12c-72e586ca06e8" />
+
 
 ---
 
@@ -194,9 +193,10 @@ Insert Screenshot Here
 
 ## Screenshot
 
-```
-Insert Screenshot Here
-```
+<img width="1022" height="842" alt="image" src="https://github.com/user-attachments/assets/71a42262-a376-4e68-9e47-3ef51ed3f0b9" />
+
+<img width="1022" height="842" alt="image" src="https://github.com/user-attachments/assets/2ef9a674-0ea6-417c-8e7a-21244b65d8fc" />
+
 
 ---
 
