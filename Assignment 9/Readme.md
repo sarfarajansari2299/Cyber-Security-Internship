@@ -120,53 +120,5 @@ scp -O \
 msfadmin@192.168.56.103:/home/msfadmin/PasswordLab/shadow .
 ```
 
-### Purpose
 
-Securely transfer the password files from Metasploitable2 to Kali Linux for offline password-cracking activities.
-
-**Screenshot:** Successful SCP file transfer
-
----
-
-## Step 7: Combine Password Files
-
-### Command
-
-```bash
-unshadow passwd shadow > hashes.txt
-```
-
-### Verify Output
-
-```bash
-cat hashes.txt
-```
-
-### Purpose
-
-The `unshadow` utility combines account information from `/etc/passwd` with password hashes from `/etc/shadow` into a single file compatible with John the Ripper.
-
-**Screenshot:** Output of `hashes.txt`
-
----
-
-## Results
-
-* Successfully extracted password hashes from Metasploitable2.
-* Accessed user account information from `/etc/passwd`.
-* Retrieved encrypted password hashes from `/etc/shadow`.
-* Transferred files securely to Kali Linux.
-* Generated a combined hash file (`hashes.txt`) for password-cracking tools.
-
----
-
-## Observation
-
-Linux systems store user account information and password hashes separately for security reasons. The `/etc/passwd` file contains user account details, while the `/etc/shadow` file stores encrypted password hashes. By combining both files using the `unshadow` utility, the hashes become suitable for offline password-cracking techniques such as dictionary attacks and brute-force attacks.
-
----
-
-## Conclusion
-
-Password hashes were successfully extracted from the Metasploitable2 machine and prepared for offline password analysis. The generated hash file will be used in subsequent tasks involving John the Ripper, Hashcat, dictionary attacks, and brute-force password recovery techniques.
 
