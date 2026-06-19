@@ -275,6 +275,8 @@ Perform a dictionary attack by comparing passwords in the RockYou wordlist again
 
 
 
+
+
 ---
 
 ## Step 5: Display Cracked Passwords
