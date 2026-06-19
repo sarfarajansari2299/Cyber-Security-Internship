@@ -97,9 +97,6 @@ ls -la
 passwd
 shadow
 ```
-
-**Screenshot:** PasswordLab directory contents
-
 ---
 
 ## Step 6: Transfer Files to Kali Linux
@@ -222,6 +219,8 @@ Verify that the RockYou wordlist is available on the Kali Linux system.
 
 ### Screenshot
 
+
+<img width="1280" height="1032" alt="1" src="https://github.com/user-attachments/assets/b0e9031d-2ac1-4f54-a7a0-046d7f7e2d5f" />
 
 
 ---
