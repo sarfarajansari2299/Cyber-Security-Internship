@@ -171,10 +171,6 @@ john hashes.txt
 
 Run John the Ripper in default mode to automatically identify and crack weak passwords stored in the hash file.
 
-### Screenshot
-
-<img width="1280" height="1032" alt="image" src="https://github.com/user-attachments/assets/48b90b1d-42b7-4d83-9a58-7744fd2da43b" />
-
 
 ---
 
@@ -268,13 +264,6 @@ john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
 
 Perform a dictionary attack by comparing passwords in the RockYou wordlist against the extracted password hashes.
 
-### Screenshot
-
-
-
-
-
-
 
 ---
 
@@ -301,31 +290,12 @@ Display all passwords successfully recovered during the dictionary attack.
 
 ### Screenshot
 
-Insert screenshot showing the cracked passwords.
+<img width="1280" height="1032" alt="1" src="https://github.com/user-attachments/assets/f17e4f41-ca00-463e-9142-8989a275c07e" />
+
+
 
 ---
 
-## Step 6: Save Results
-
-### Commands
-
-```bash
-john --show hashes.txt > rockyou_results.txt
-```
-
-```bash
-cat rockyou_results.txt
-```
-
-### Purpose
-
-Save recovered credentials to a text file for documentation and analysis.
-
-### Screenshot
-
-Insert screenshot showing the contents of `rockyou_results.txt`.
-
----
 
 ## Results
 
@@ -333,7 +303,7 @@ Insert screenshot showing the contents of `rockyou_results.txt`.
 * Performed a dictionary attack against extracted password hashes.
 * Tested millions of commonly used passwords.
 * Recovered multiple weak passwords from the target system.
-* Demonstrated the effectiveness of dictionary-based password attacks.
+* Demonstrated the effectiveness of dictionary-based password attacks. However Password not found from the rockyou.text.
 
 ---
 
