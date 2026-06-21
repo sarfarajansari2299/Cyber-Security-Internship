@@ -317,3 +317,159 @@ Dictionary attacks are significantly faster than brute-force attacks because the
 
 The RockYou wordlist successfully demonstrated how attackers can leverage publicly available password databases to recover weak credentials. The exercise highlights the importance of strong, unique passwords and proper password management practices to defend against dictionary-based attacks.
 
+# 1(d) Brute Force Attack with Custom Rules
+
+## Objective
+
+Perform a brute-force password attack using John the Ripper's rule-based and incremental cracking modes to understand how automated password generation techniques can recover weak passwords.
+
+---
+
+## Step 1: Create a Custom Wordlist
+
+### Command
+
+```bash
+nano custom_words.txt
+```
+
+### Wordlist Contents
+
+```text
+admin
+password
+user
+service
+msfadmin
+root
+```
+
+### Verify
+
+```bash
+cat custom_words.txt
+```
+
+### Purpose
+
+Create a small custom wordlist containing common usernames and passwords that will be used during the rule-based password attack.
+
+### Screenshot
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/0e9fbea7-e392-4ddd-993c-d693ac837334" />
+
+---
+
+## Step 3: Display Cracked Passwords
+
+### Command
+
+```bash
+john --show hashes.txt
+```
+
+### Purpose
+
+Display all passwords successfully recovered during the rule-based attack.
+
+### Screenshot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+## Step 4: Perform Incremental Brute Force Attack
+
+### Command
+
+```bash
+john --incremental hashes.txt
+```
+
+### Purpose
+
+Generate password combinations automatically and attempt to crack hashes through exhaustive search.
+
+### Note
+
+Allow the attack to run for 1–2 minutes and then stop it using:
+
+```text
+CTRL + C
+```
+
+### Screenshot
+
+Insert screenshot showing incremental mode running.
+
+---
+
+## Step 5: Review Results
+
+### Command
+
+```bash
+john --show hashes.txt
+```
+
+### Purpose
+
+Review the final list of cracked passwords after the brute-force attack.
+
+### Screenshot
+
+Insert screenshot showing the final cracking results.
+
+---
+
+## Results
+
+* Successfully created a custom password wordlist.
+* Executed a rule-based password attack using John the Ripper.
+* Generated multiple password variations automatically.
+* Performed an incremental brute-force attack.
+* Demonstrated the effectiveness of automated password-cracking techniques.
+
+---
+
+## Observation
+
+Rule-based attacks are significantly faster than pure brute-force attacks because they generate realistic password variations from known words. Incremental brute-force attacks require more time and computational resources but can discover passwords that do not exist in standard dictionaries.
+
+---
+
+## Conclusion
+
+John the Ripper successfully demonstrated both rule-based and brute-force password-cracking techniques. The exercise highlighted how weak passwords can be recovered through automated password generation and exhaustive search methods, emphasizing the importance of strong password policies and complexity requirements.
+
+---
+
+## Commands Summary
+
+```bash
+nano custom_words.txt
+
+cat custom_words.txt
+
+john --wordlist=custom_words.txt --rules hashes.txt
+
+john --show hashes.txt
+
+john --incremental hashes.txt
+
+john --show hashes.txt
+```
