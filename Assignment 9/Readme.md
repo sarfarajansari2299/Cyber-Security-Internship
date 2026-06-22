@@ -317,7 +317,7 @@ Dictionary attacks are significantly faster than brute-force attacks because the
 
 The RockYou wordlist successfully demonstrated how attackers can leverage publicly available password databases to recover weak credentials. The exercise highlights the importance of strong, unique passwords and proper password management practices to defend against dictionary-based attacks.
 
-# 1(d) Brute Force Attack with Custom Rules
+# d. Brute Force Attack with Custom Rules
 
 ## Objective
 
