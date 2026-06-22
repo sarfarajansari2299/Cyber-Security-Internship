@@ -464,3 +464,175 @@ john --wordlist=custom_words.txt --rules shadow
 john --show shadow
 
 ```
+# e. Use Hashcat for GPU-Accelerated Cracking
+
+## Objective
+
+Use Hashcat to perform password cracking against extracted password hashes and compare its capabilities with John the Ripper.
+
+---
+
+## Step 1: Verify Hashcat Installation
+
+### Command
+
+```bash
+hashcat --version
+```
+
+### If Not Installed
+
+```bash
+sudo apt update
+sudo apt install hashcat -y
+```
+
+### Purpose
+
+Verify that Hashcat is installed and ready for use.
+
+### Screenshot
+
+<img width="1205" height="997" alt="image" src="https://github.com/user-attachments/assets/31ea9f20-2a21-4db6-9a4c-a8f521c9ca29" />
+
+
+---
+
+## Step 2: Identify Hash Type
+
+### Command
+
+```bash
+head shadow
+```
+
+### Purpose
+
+Review the extracted password hashes and determine the hash type before starting the attack.
+
+### Screenshot
+
+<img width="1205" height="997" alt="image" src="https://github.com/user-attachments/assets/1820614b-b844-4e2e-b3b5-17174eedeb39" />
+
+
+---
+
+## Step 3: Verify Available Devices
+
+### Command
+
+```bash
+hashcat -I
+```
+
+### Purpose
+
+Display available CPU, GPU, and OpenCL devices that Hashcat can use during password cracking.
+
+### Screenshot
+
+<img width="1207" height="610" alt="image" src="https://github.com/user-attachments/assets/0f541a02-cfcc-4839-a043-9e0abaf4d597" />
+
+
+---
+
+## Step 4: Execute Dictionary Attack
+
+### Command
+
+```bash
+hashcat -m 500 -a 0 hashes.txt /usr/share/wordlists/rockyou.txt
+```
+
+### Parameters
+
+| Option        | Description                |
+| ------------- | -------------------------- |
+| `-m 500`      | MD5 Crypt (Linux Hash)     |
+| `-a 0`        | Straight Dictionary Attack |
+| `hashes.txt`  | Target hash file           |
+| `rockyou.txt` | Password wordlist          |
+
+### Purpose
+
+Perform a dictionary attack against the extracted password hashes using the RockYou wordlist.
+
+### Screenshot
+
+Insert screenshot showing Hashcat running.
+
+---
+
+## Step 5: View Cracked Passwords
+
+### Command
+
+```bash
+hashcat --show -m 500 hashes.txt
+```
+
+### Purpose
+
+Display all recovered passwords.
+
+### Screenshot
+
+Insert screenshot showing recovered credentials.
+
+---
+
+## Step 6: Display Statistics
+
+### Command
+
+```bash
+hashcat --status
+```
+
+### Purpose
+
+Display attack progress, speed, and device utilization.
+
+### Screenshot
+
+Insert screenshot showing Hashcat statistics.
+
+---
+
+## Results
+
+* Successfully installed and configured Hashcat.
+* Identified available cracking devices.
+* Executed a dictionary attack against extracted password hashes.
+* Recovered weak passwords using the RockYou wordlist.
+* Compared Hashcat's performance with John the Ripper.
+
+---
+
+## Observation
+
+Hashcat is optimized for high-speed password cracking and can utilize GPU acceleration when supported hardware is available. Even in CPU mode, Hashcat provides detailed performance metrics and efficient password recovery capabilities.
+
+---
+
+## Conclusion
+
+Hashcat successfully demonstrated high-performance password cracking using a dictionary attack. The exercise highlighted the importance of strong password complexity and secure password management practices to defend against modern password-cracking tools.
+
+---
+
+## Commands Summary
+
+```bash
+hashcat --version
+
+hashcat -I
+
+head hashes.txt
+
+hashcat -m 500 -a 0 hashes.txt /usr/share/wordlists/rockyou.txt
+
+hashcat --show -m 500 hashes.txt
+
+hashcat --status
+```
