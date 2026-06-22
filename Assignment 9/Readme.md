@@ -465,11 +465,8 @@ nano custom_words.txt
 
 cat custom_words.txt
 
-john --wordlist=custom_words.txt --rules hashes.txt
+john --wordlist=custom_words.txt --rules shadow
 
-john --show hashes.txt
+john --show shadow
 
-john --incremental hashes.txt
-
-john --show hashes.txt
 ```
