@@ -272,7 +272,7 @@ Perform a dictionary attack by comparing passwords in the RockYou wordlist again
 ### Command
 
 ```bash
-john --show hashes.txt
+john --show shadow.txt
 ```
 
 ### Sample Output
@@ -365,7 +365,7 @@ Create a small custom wordlist containing common usernames and passwords that wi
 ### Command
 
 ```bash
-john --show hashes.txt
+john --show shadow
 ```
 
 ### Purpose
@@ -397,7 +397,7 @@ Display all passwords successfully recovered during the rule-based attack.
 ### Command
 
 ```bash
-john --incremental hashes.txt
+john --incremental Shadow
 ```
 
 ### Purpose
@@ -412,9 +412,6 @@ Allow the attack to run for 1–2 minutes and then stop it using:
 CTRL + C
 ```
 
-### Screenshot
-
-Insert screenshot showing incremental mode running.
 
 ---
 
@@ -423,16 +420,13 @@ Insert screenshot showing incremental mode running.
 ### Command
 
 ```bash
-john --show hashes.txt
+john --show shadow
 ```
 
 ### Purpose
 
 Review the final list of cracked passwords after the brute-force attack.
 
-### Screenshot
-
-Insert screenshot showing the final cracking results.
 
 ---
 
