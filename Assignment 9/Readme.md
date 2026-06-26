@@ -372,23 +372,6 @@ john --show shadow
 
 Display all passwords successfully recovered during the rule-based attack.
 
-### Screenshot
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -557,9 +540,6 @@ hashcat -m 500 -a 0 hashes.txt /usr/share/wordlists/rockyou.txt
 
 Perform a dictionary attack against the extracted password hashes using the RockYou wordlist.
 
-### Screenshot
-
-Insert screenshot showing Hashcat running.
 
 ---
 
@@ -575,9 +555,6 @@ hashcat --show -m 500 hashes.txt
 
 Display all recovered passwords.
 
-### Screenshot
-
-Insert screenshot showing recovered credentials.
 
 ---
 
@@ -593,9 +570,7 @@ hashcat --status
 
 Display attack progress, speed, and device utilization.
 
-### Screenshot
 
-Insert screenshot showing Hashcat statistics.
 
 ---
 
