@@ -611,3 +611,200 @@ hashcat --show -m 500 hashes.txt
 
 hashcat --status
 ```
+
+# 2. Hash Identification
+
+## Objective
+
+Identify different password hash algorithms using Kali Linux tools and online hash identification resources. Understanding hash formats helps security professionals choose the correct cracking method and tool configuration.
+
+---
+
+# 2(a) Practice Identifying Hash Types (MD5, SHA1, SHA256, NTLM)
+
+## Step 1: Create Sample Hashes
+
+### Generate an MD5 Hash
+
+```bash
+echo -n "password123" | md5sum
+```
+
+### Generate a SHA1 Hash
+
+```bash
+echo -n "password123" | sha1sum
+```
+
+### Generate a SHA256 Hash
+
+```bash
+echo -n "password123" | sha256sum
+```
+
+### Purpose
+
+Generate sample password hashes for different hashing algorithms.
+
+### Screenshot
+
+Insert screenshot showing the generated MD5, SHA1, and SHA256 hashes.
+
+---
+
+## Step 2: Understand Common Hash Formats
+
+| Hash Type | Length        | Example Prefix  |
+| --------- | ------------- | --------------- |
+| MD5       | 32 Characters | `482c811da5...` |
+| SHA1      | 40 Characters | `cbfdac6008...` |
+| SHA256    | 64 Characters | `ef92b778ba...` |
+| NTLM      | 32 Characters | `8846f7eaee...` |
+
+### Observation
+
+Different hashing algorithms produce hashes of different lengths, making it possible to identify many hash types visually.
+
+---
+
+# 2(b) Use hash-identifier Tool in Kali Linux
+
+## Step 1: Launch Hash Identifier
+
+```bash
+hash-identifier
+```
+
+If the command is unavailable:
+
+```bash
+sudo apt update
+sudo apt install hash-identifier -y
+```
+
+### Screenshot
+
+Insert screenshot showing Hash Identifier starting.
+
+---
+
+## Step 2: Identify an MD5 Hash
+
+Paste the MD5 hash generated earlier:
+
+```text
+482c811da5d5b4bc6d497ffa98491e38
+```
+
+Press **Enter**.
+
+### Expected Result
+
+```text
+Possible Hashes:
+[+] MD5
+```
+
+### Screenshot
+
+Insert screenshot showing MD5 identification.
+
+---
+
+## Step 3: Identify a SHA1 Hash
+
+Paste the generated SHA1 hash into Hash Identifier.
+
+### Screenshot
+
+Insert screenshot showing SHA1 identification.
+
+---
+
+## Step 4: Identify a SHA256 Hash
+
+Paste the generated SHA256 hash into Hash Identifier.
+
+### Screenshot
+
+Insert screenshot showing SHA256 identification.
+
+---
+
+# 2(c) Use Online Hash Databases (Lab Environment)
+
+## Step 1: Open Browser
+
+Use Firefox in Kali Linux.
+
+---
+
+## Step 2: Visit a Hash Identification Website
+
+Examples:
+
+* https://hashes.com
+* https://www.tunnelsup.com/hash-analyzer/
+* https://md5hashing.net/hash-type-checker
+
+---
+
+## Step 3: Paste the MD5 Hash
+
+Example:
+
+```text
+482c811da5d5b4bc6d497ffa98491e38
+```
+
+The website should identify it as an **MD5** hash.
+
+### Screenshot
+
+Insert screenshot showing successful hash identification.
+
+---
+
+## Step 4: Repeat for SHA1 and SHA256
+
+Paste the generated SHA1 and SHA256 hashes and verify their identified hash types.
+
+### Screenshot
+
+Insert screenshots showing successful identification.
+
+---
+
+# Results
+
+* Successfully generated MD5, SHA1, and SHA256 hashes.
+* Identified different hash algorithms based on their format and length.
+* Used the Hash Identifier tool in Kali Linux to recognize multiple hash types.
+* Verified hash types using online hash identification resources.
+* Learned how proper hash identification helps select the correct password-cracking method.
+
+---
+
+# Observation
+
+Hash identification is an important first step in password-cracking activities. Different algorithms require different attack modes in tools such as John the Ripper and Hashcat. Correctly identifying the hash type improves attack efficiency and reduces unnecessary processing time.
+
+---
+
+# Conclusion
+
+Multiple hashing algorithms were successfully generated and identified using both local and online tools. The exercise demonstrated how hash length, format, and specialized identification utilities assist penetration testers in selecting the appropriate cracking technique during password security assessments.
+
+---
+
+# Commands Summary
+
+```bash
+echo -n "password123" | md5sum
+
+echo -n "password123" | sha1sum
+
+echo -n "password123" | sha256sum
+
+hash-identifier
+```
